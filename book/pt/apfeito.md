@@ -22,7 +22,7 @@ Sim: boa parte do texto que você leu saiu primeiro de agentes de IA. Eles leram
 <!-- src: original -->
 Não: a matéria-prima é minha. Cada experiência que o livro conta eu vivi, e cada medição eu fiz, ao longo de oito meses, com bilhões de tokens gastos e centenas de horas de trabalho. As opiniões são as que eu escrevi durante o ano. Nenhuma foi inventada pra preencher capítulo.
 
-E as decisões também são minhas: a estrutura em cinco partes, o que entra e o que sai, as regras que o texto tem que obedecer, o que fazer quando dois posts meus discordam, e a palavra final sobre cada capítulo. Os agentes digitaram. Eu decidi o que eles iam digitar e o que ia pro lixo.
+E as decisões também são minhas: a estrutura em cinco partes, o que entra e o que sai, as regras a que o texto tem que obedecer, o que fazer quando dois posts meus discordam, e a palavra final sobre cada capítulo. Os agentes digitaram. Eu decidi o que eles iam digitar e o que ia pro lixo.
 
 ## Dois prompts e pronto?
 

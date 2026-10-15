@@ -44,7 +44,7 @@ Depois de ler aquilo, o que separa você de um modelo de verdade é, nas palavra
 O resultado foi o microgpt lab, um projeto aberto que eu escrevi do zero, inspirado no arquivo dele [@akita2026microgpt]. São umas 3.300 linhas de Python, organizadas por conceito, com testes, e um relatório de fechamento que registra cada decisão, cada medida e cada erro; é dele que saem os números deste capítulo. A regra do exercício era treinar do zero, então nenhum peso pronto foi baixado de lugar nenhum: todo modelo ali começa sorteado e aprende com o código do próprio projeto.
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
-O projeto passou por quatro tamanhos. Começou com uma lição de menos de um milhão de parâmetros, que roda num processador comum e ensina o ciclo inteiro. Passou por modelos de 91 e de 239 milhões, que me ensinaram a maior parte dos tropeços que vou contar. E terminou no modelo final, de 337 milhões de [parâmetros]{.gls key=parametros}, que é dele que falo daqui em diante.
+O projeto passou por quatro tamanhos. Começou com uma lição de menos de um milhão de parâmetros, que roda num processador comum e ensina o ciclo inteiro. Passou por modelos de 91 e de 239 milhões, que me ensinaram a maior parte dos tropeços que vou contar. E terminou no modelo final, de 337 milhões de [parâmetros]{.gls key=parametros}, e é dele que falo daqui em diante.
 
 ## As seis estações
 
