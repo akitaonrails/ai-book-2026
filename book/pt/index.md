@@ -84,7 +84,7 @@ O livro segue o meu ano, mais ou menos na ordem em que as coisas aconteceram. Ca
 
 O primeiro é o mais antigo: tem alguém ali dentro? A primeira parte abre a caixa, sem matemática. Mostra por que o texto que sai de um chatbot parece vir de alguém, por que ele esquece o que vocês combinaram, o que muda quando ele ganha ferramentas pra mexer no seu computador, e por que tende a concordar com você e inventar fontes pra isso. Só entender esse mecanismo já protege bastante.
 
-O segundo medo é o oposto do primeiro: e se for tudo só demonstração? Na segunda parte eu conto a maratona. Tem o editor de texto que parecia pronto em hora e meia e precisou de umas trinta horas pra funcionar de verdade, o produto que foi do zero ao ar em menos de uma semana, e o projeto que fracassou mesmo com a máquina fazendo tudo o que eu pedia. Funciona, só que de um jeito bem diferente do que aparece nos vídeos de "fiz um app em dez minutos".
+O segundo medo é o oposto do primeiro: e se for tudo só demonstração? Na segunda parte eu conto a maratona. Tem o editor de texto que parecia pronto em uma hora e meia e precisou de umas trinta horas pra funcionar de verdade, o produto que foi do zero ao ar em menos de uma semana, e o projeto que fracassou mesmo com a máquina fazendo tudo o que eu pedia. Funciona, só que de um jeito bem diferente do que aparece nos vídeos de "fiz um app em dez minutos".
 
 O terceiro vem em forma de pergunta: qual é a melhor? Ela está ficando exponencialmente mais inteligente? Devo acreditar nos anúncios? A terceira parte é a briga com os números: como se mede uma IA, os modelos que eu peguei colando na prova, o que dá pra rodar no computador de casa e como funciona a fábrica de propaganda em volta de tudo isso.
 
