@@ -1,7 +1,8 @@
 # Builds and validates every edition (one job per language) on each push and
 # pull request. On a v* tag, a release job collects the editions and publishes
 # a GitHub Release. Release notes come from the tag's section in CHANGELOG.md;
-# tags with a hyphen (v1.0.0-preview) are marked as pre-releases.
+# tags with a hyphen (v1.0.0-preview) are marked as pre-releases. The
+# audiobook job, off by default, then attaches an M4B per edition.
 name: book
 
 on:
@@ -110,3 +111,75 @@ jobs:
             echo "deleting release $old"
             gh release delete "$old" --yes
           done
+
+  # Opt-in, off until the repository variable AUDIOBOOK is set to "true": then
+  # each release also gets one M4B per edition, read aloud from the EPUB the
+  # build job made (rake audiobook). Attaching the file to a public release
+  # distributes it, so the switch is the author's. It runs after the release so
+  # a slow or failed narration never holds back the EPUB and PDFs. Narration
+  # runs third-party Python with floating dependencies, so it gets a read-only
+  # token; only audiobook-release, which runs no such code, can write.
+  audiobook:
+    if: startsWith(github.ref, 'refs/tags/v') && vars.AUDIOBOOK == 'true'
+    needs: release
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360 # the PT edition (15 h of audio) took 2.5 h on a desktop
+    strategy:
+      fail-fast: false
+      matrix:
+        lang: [pt, en]
+    env:
+      BOOK_LANG: ${{ matrix.lang }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: ruby/setup-ruby@v1.327.0
+        with:
+          ruby-version: .ruby-version
+
+      - uses: astral-sh/setup-uv@v10.3.0 # runs the pinned epub2tts-edge
+
+      - name: System tools (audio mux)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - uses: actions/download-artifact@v8.0.1
+        with:
+          name: book-${{ matrix.lang }}
+          path: build/${{ matrix.lang }}
+
+      - name: Read the EPUB aloud (Microsoft Edge voices, network, hours)
+        run: rake audiobook
+
+      - uses: actions/upload-artifact@v7.0.1
+        with:
+          name: audiobook-${{ matrix.lang }}
+          path: build/${{ matrix.lang }}/*.m4b
+          if-no-files-found: error
+          compression-level: 0 # AAC doesn't compress further
+          retention-days: 14
+
+  audiobook-release:
+    needs: audiobook
+    # Each edition that was read is attached, even if the other one failed.
+    if: ${{ !cancelled() && needs.audiobook.result != 'skipped' }}
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8.0.1
+        with:
+          pattern: audiobook-*
+          path: dist
+          merge-multiple: true
+
+      - name: Attach the M4Bs to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          shopt -s nullglob
+          files=(dist/*.m4b)
+          [ ${#files[@]} -gt 0 ] || { echo "no M4B was produced"; exit 1; }
+          gh release upload --clobber --repo "$GITHUB_REPOSITORY" "$TAG" "${files[@]}"

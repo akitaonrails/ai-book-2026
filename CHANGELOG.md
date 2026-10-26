@@ -8,6 +8,13 @@ files.
 
 - Fixed a missing word in the PT preface ("pronto em uma hora e meia"); the
   English edition already read correctly. Reported in #8, fixed in #7.
+- Add `rake audiobook`: reads the built EPUB aloud with Microsoft Edge's
+  online voices (epub2tts-edge, pinned) into an M4B with chapters and cover.
+  The generated back matter, citations, URLs, images and code blocks are left
+  out; figure captions and table rows are read. `SAMPLE=1` reads only the
+  opening of the first chapters. The `book` workflow can attach an M4B per
+  edition to each release; it stays off until the `AUDIOBOOK` repository
+  variable is set to `true`.
 
 ## 1.0.0 — 2026-10-17
 

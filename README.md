@@ -76,9 +76,20 @@ explicitly unverified permissions). The details are in
 rake tools    # fetch the pinned toolchain (Quarto with Pandoc and Typst, epubcheck)
 rake build    # EPUB, PDF, web and DOCX editions in build/pt/, with epubcheck and a page audit
 rake drift    # what in the book is out of date with the blog
+rake audiobook  # read the built EPUB aloud into build/pt/<title>.m4b (VOICE=..., SAMPLE=1 optional)
 ```
 
-Requires Ruby, Java (for epubcheck) and poppler-utils.
+Requires Ruby, Java (for epubcheck) and poppler-utils. The audiobook also
+needs [uv](https://docs.astral.sh/uv/), git, ffmpeg and the network: it uses
+Microsoft Edge's online voices through
+[epub2tts-edge](https://github.com/aedocw/epub2tts-edge), takes hours for the
+whole book and, if interrupted, resumes from the last finished chapter.
+epub2tts-edge is pinned by commit, but its dependencies are not: edge-tts in
+particular has to keep up with Microsoft's endpoint. `SAMPLE=1` reads only
+the opening of the first chapters, a few minutes to judge the voice and the
+chapter marks. The `book` workflow attaches an M4B per edition to each
+release only once the repository variable `AUDIOBOOK` is set to `true`; it
+is off by default.
 
 The PT-BR build emits hardcover and paperback interiors with separate ISBNs;
 English emits a hardcover interior. See [print builds and covers](docs/PRINT-COVERS.md)
