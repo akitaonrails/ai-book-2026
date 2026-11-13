@@ -70,7 +70,7 @@ Estudar não garante que o mercado vai recompensar cada pessoa na proporção do
 Quando saí de sites e agências pra integração de sistemas empresariais, precisei aprender um mundo diferente. Depois vieram outras mudanças, incluindo vídeo, educação e os projetos com IA. A parte da minha carreira que atravessou essas fases foi a capacidade de aprender o problema seguinte; nenhuma interface específica teria servido pra todas elas.
 
 <!-- src: original -->
-Em @sec-ch18 eu contei a mudança dos cartões perfurados até os agentes. Aqui está a consequência que faltava explicitar: cada camada automatizada permite dispensar parte do trabalho que sustentava a camada anterior. A inovação que substitui uma atividade torna aquela atividade menos necessária, mesmo quando ainda há gente boa vivendo dela.
+No @sec-ch18 eu contei a mudança dos cartões perfurados até os agentes. Aqui está a consequência que faltava explicitar: cada camada automatizada permite dispensar parte do trabalho que sustentava a camada anterior. A inovação que substitui uma atividade torna aquela atividade menos necessária, mesmo quando ainda há gente boa vivendo dela.
 
 ### A conta não fecha na mesma semana
 
@@ -78,7 +78,7 @@ Uma sociedade que precisa gastar menos esforço pra obter o mesmo resultado pode
 
 Mas a pessoa demitida paga aluguel antes de a economia descobrir onde usar a capacidade liberada. Recolocação, formação e apoio durante a transição são problemas concretos. Reconhecer esse custo não exige defender que a tecnologia pare; exige parar de vender a transição como se fosse indolor.
 
-Também não resolve chamar toda novidade de progresso. Um sistema que ficou barato porque passou a errar cobranças, excluir usuários ou transferir trabalho pro cliente piorou o serviço. A comparação precisa incluir o resultado que chega a quem depende dele, como discutimos em @sec-ch19.
+Também não resolve chamar toda novidade de progresso. Um sistema que ficou barato porque passou a errar cobranças, excluir usuários ou transferir trabalho pro cliente piorou o serviço. A comparação precisa incluir o resultado que chega a quem depende dele, como discutimos no @sec-ch19.
 
 > O fato de uma atividade ter pago suas contas durante anos não obriga o mundo a continuar precisando dela.
 
@@ -141,7 +141,7 @@ O mesmo vale pra um programa escrito inteiramente à mão. O trabalho manual nã
 
 Isso não obriga ninguém a ignorar o processo. Se um cliente comprou trabalho artesanal, essa característica faz parte do pedido. Se há problema de licença, confidencialidade ou atribuição, temos uma objeção específica que merece resposta; esconder a origem pra contornar uma exigência também compromete a entrega.
 
-O que eu rejeito é usar "feito por IA" como substituto de avaliação técnica. Em @sec-ch16 vimos código gerado acumulando riscos reais. Dá pra criticar a vulnerabilidade, o teste insuficiente e o responsável que publicou sem conferir, sem inventar que o mesmo defeito seria aceitável se tivesse sido digitado devagar.
+O que eu rejeito é usar "feito por IA" como substituto de avaliação técnica. No @sec-ch16 vimos código gerado acumulando riscos reais. Dá pra criticar a vulnerabilidade, o teste insuficiente e o responsável que publicou sem conferir, sem inventar que o mesmo defeito seria aceitável se tivesse sido digitado devagar.
 
 ### A assinatura vem com trabalho
 
@@ -170,7 +170,7 @@ O iniciante pode acertar um prato excelente seguindo a receita. Falta conseguir 
 No episódio 90 do Akitando, *O que os cursos não te ensinam sobre mercados*, publicado em janeiro de 2021, eu já separava o caminho guiado do curso e o mundo do trabalho. Fora da aula, você precisa formular perguntas que ninguém preparou por você. E um período de contratação fácil pode esconder essa diferença por tempo suficiente pra parecer que ela não existe [@akitando090].
 
 <!-- src: original -->
-Em @sec-ch18 está a história da bolha. Aqui importa o aprendizado errado que ela podia deixar: "Fui contratado, então minha formação terminou". Contratação mostra que alguém precisava de você naquela situação; não é um certificado vitalício de que seu repertório continuará adequado.
+No @sec-ch18 está a história da bolha. Aqui importa o aprendizado errado que ela podia deixar: "Fui contratado, então minha formação terminou". Contratação mostra que alguém precisava de você naquela situação; não é um certificado vitalício de que seu repertório continuará adequado.
 
 ### Praticar o que você ainda não domina
 
@@ -184,13 +184,13 @@ Imagine que, numa revisão normal do seu trabalho, você precise conferir um des
 
 Se você só consegue repetir a explicação da ferramenta, encontrou algo concreto pra estudar. As sugestões por profissão pra começar nesta semana estão no epílogo (@sec-epilogo).
 
-O roteiro de estudo está em @sec-apestudar; não vou repeti-lo aqui. A mudança com os agentes é a quantidade de ajuda disponível pra explorar uma dúvida. Dá pra pedir exemplos, comparar alternativas e preparar exercícios, desde que você confira as respostas e não use a ferramenta pra esconder de si mesmo o que ainda não entendeu.
+O roteiro de estudo está no @sec-apestudar; não vou repeti-lo aqui. A mudança com os agentes é a quantidade de ajuda disponível pra explorar uma dúvida. Dá pra pedir exemplos, comparar alternativas e preparar exercícios, desde que você confira as respostas e não use a ferramenta pra esconder de si mesmo o que ainda não entendeu.
 
 Isso vale também pra quem tem décadas de carreira. Conhecer muito de um domínio não me torna especialista no próximo. Se eu começo a avaliar design, preciso aprender a enxergar problemas de design; meu histórico programando não transforma toda preferência minha em uma decisão boa.
 
 > Use a facilidade de produzir pra aumentar a qualidade da prática, sem confundir quantidade de respostas com aprendizado.
 
-O espelho que apareceu em @sec-ch06 e @sec-ch07 volta aqui: a maneira como você escolhe, verifica e corrige fica visível no resultado. Quem aprova qualquer coisa tende a publicar mais qualquer coisa. Quem tem critério consegue usar as tentativas pra melhorar, e quem está começando pode desenvolver esse critério.
+O espelho que apareceu no @sec-ch06 e no @sec-ch07 volta aqui: a maneira como você escolhe, verifica e corrige fica visível no resultado. Quem aprova qualquer coisa tende a publicar mais qualquer coisa. Quem tem critério consegue usar as tentativas pra melhorar, e quem está começando pode desenvolver esse critério.
 
 Isso não significa que todo erro do agente seja culpa do usuário, nem que um especialista consiga superar qualquer limite do modelo. Também não há garantia de Oscar ou de estrela Michelin. Experiência ajuda a reconhecer onde a ferramenta serve e onde insistir nela só vai produzir mais trabalho ruim.
 

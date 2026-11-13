@@ -61,11 +61,11 @@ A segunda é a conferência. Cada número, data e nome foi checado contra os meu
 A terceira é que a conferência corrigiu a mim também. Em junho eu escrevi no blog que um modelo custava dez vezes mais que outro; refeitas as contas, era quase o dobro, e o livro conta o erro e a correção. Num post de fevereiro eu datei a bolha de contratação em 2014; ela começou por volta de 2010, com o juro perto de zero. O posfácio lista outras correções desse tipo, e boa parte delas é do meu próprio blog.
 
 <!-- src: original -->
-E o que ainda pode estar errado? Boa parte da conferência foi feita por agentes, e o próprio livro mostra em @sec-ch04 e @sec-ch15 que máquina inventa fato e que auditoria feita por IA deixa coisa passar. Eu li e aprovei cada capítulo, e ainda assim vai ter erro.
+E o que ainda pode estar errado? Boa parte da conferência foi feita por agentes, e o próprio livro mostra no @sec-ch04 e no @sec-ch15 que máquina inventa fato e que auditoria feita por IA deixa coisa passar. Eu li e aprovei cada capítulo, e ainda assim vai ter erro.
 
 O livro é público, e quem achar um pode abrir uma issue no repositório dele no GitHub. A marca de origem existe pra que a correção chegue ao parágrafo certo.
 
-> "Foi feito com IA" diz muito pouco, como eu argumento em @sec-ch16. O que diz alguma coisa é quem conferiu, contra o quê, e o que fez quando achou erro.
+> "Foi feito com IA" diz muito pouco, como eu argumento no @sec-ch16. O que diz alguma coisa é quem conferiu, contra o quê, e o que fez quando achou erro.
 
 ## O que só a experiência entrega
 

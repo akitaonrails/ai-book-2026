@@ -67,7 +67,7 @@ Quando eu afirmo um fato que não saiu da minha própria experiência, como uma 
 Este livro nasceu de artigos que publiquei no meu blog ao longo de 2026. Reescrevi tudo pra quem não programa, cortei código e repetição, e juntei textos que tratavam do mesmo assunto em semanas diferentes. Se você quiser ler a versão original de um capítulo, com o contexto e a data de cada texto, o apêndice de Fontes (@sec-fontes) lista os artigos de origem, capítulo por capítulo.
 
 <!-- src: original -->
-Os diagramas foram desenhados pro livro. Algumas ilustrações foram geradas por IA sob a minha direção, e cada uma está identificada em Créditos das imagens (@sec-creditos), junto com o crédito das fotos de terceiros. Um livro sobre IA que escondesse onde usou IA estaria fazendo exatamente o que ele critica.
+Os diagramas foram desenhados pro livro. Algumas ilustrações foram geradas por IA sob a minha direção, e cada uma está identificada nos Créditos das imagens (@sec-creditos), junto com o crédito das fotos de terceiros. Um livro sobre IA que escondesse onde usou IA estaria fazendo exatamente o que ele critica.
 
 <!-- src: original -->
 Falta um aviso antes do primeiro capítulo. Tem uma parte do assunto que eu deixei de fora de propósito, e você merece saber qual é antes de começar.
