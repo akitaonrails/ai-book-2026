@@ -23,7 +23,7 @@ blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
 # Kit mínimo para usar agentes com segurança {#sec-apB}
 
 <!-- src: original -->
-Este apêndice junta a parte prática que eu tirei dos capítulos pra não quebrar a história. Em @sec-ch15 você viu por que um [agente]{.gls} de IA merece o tratamento de um estagiário com a senha de administrador. Em @sec-ch02 viu por que ele esquece o que vocês combinaram uma hora antes. Aqui fica o que fazer a respeito, na ordem em que eu montaria a casa de alguém que está começando.
+Este apêndice junta a parte prática que eu tirei dos capítulos pra não quebrar a história. No @sec-ch15 você viu por que um [agente]{.gls} de IA merece o tratamento de um estagiário com a senha de administrador. No @sec-ch02 viu por que ele esquece o que vocês combinaram uma hora antes. Aqui fica o que fazer a respeito, na ordem em que eu montaria a casa de alguém que está começando.
 
 Passo a passo de instalação ficou de fora de propósito. Ferramenta muda de versão, de nome e de dono, e um passo a passo copiado hoje estaria errado em seis meses. O que dura é a função de cada peça: pra que ela serve, o que ela precisa garantir e como conferir se está funcionando. Os poucos comandos que aparecem estão aí pra mostrar o tamanho da coisa, e cada um vem explicado.
 
@@ -56,7 +56,7 @@ Uma [sandbox]{.gls} é um ambiente isolado em que o programa só vê e só alter
 - nada de atalho pra programas que rodam como [root]{.gls}, o administrador do sistema.
 
 <!-- src: 2026/07/25/ai-jail-update-seguranca-docker-opt-in -->
-O último item parece detalhe e foi o furo que mais me ensinou no ano. O Docker, a ferramenta de [contêineres]{.gls key=conteiner} que todo agente adora usar, atende os pedidos por um programa que roda como root, fora da jaula. Liberar o acesso a ele é o mesmo que entregar a chave da casa (a história está em @sec-ch15). Se você precisa dele dentro da jaula, ligue só naquela sessão, sabendo o que está liberando.
+O último item parece detalhe e foi o furo que mais me ensinou no ano. O Docker, a ferramenta de [contêineres]{.gls key=conteiner} que todo agente adora usar, atende os pedidos por um programa que roda como root, fora da jaula. Liberar o acesso a ele é o mesmo que entregar a chave da casa (a história está no @sec-ch15). Se você precisa dele dentro da jaula, ligue só naquela sessão, sabendo o que está liberando.
 
 ### Como montar, em cada sistema
 
@@ -207,7 +207,7 @@ A regra de produção, com a história por trás, está no @sec-ch15.
 ## 6. Notas que sobrevivem à sessão
 
 <!-- src: 2026/05/18/como-memoria-de-agentes-funciona-e-como-melhorar -->
-O modelo não lembra de você. Ele relê, a cada pergunta, o que cabe na mesa de trabalho que você viu em @sec-ch02, e quando a mesa enche, a [compactação]{.gls key=compactacao} resume o começo da conversa e perde detalhe. Fechou a sessão, acabou. A memória que vale é a que você escreve em arquivo.
+O modelo não lembra de você. Ele relê, a cada pergunta, o que cabe na mesa de trabalho que você viu no @sec-ch02, e quando a mesa enche, a [compactação]{.gls key=compactacao} resume o começo da conversa e perde detalhe. Fechou a sessão, acabou. A memória que vale é a que você escreve em arquivo.
 
 Eu separo o que guardar em três gavetas:
 
@@ -275,7 +275,7 @@ Por fim, a opção `--bootstrap` escreve configurações de permissão pra cinco
 ### ai-memory, as notas
 
 <!-- src: ref:ai-memory/README.md -->
-O ai-memory é a memória de longo prazo que eu prometi em @sec-ch02 e contei em @sec-ch20 [@akita2026aimemory; @aimemory2026site]. A ideia: uma sessão nova, em qualquer agente compatível, começa de onde a anterior parou. Ganchos instalados no agente registram a sessão em silêncio, e o servidor transforma o registro em páginas de texto comum. O que ele faz, quando vale a pena e como começar estão em @sec-apmemoria.
+O ai-memory é a memória de longo prazo que eu prometi no @sec-ch02 e contei no @sec-ch20 [@akita2026aimemory; @aimemory2026site]. A ideia: uma sessão nova, em qualquer agente compatível, começa de onde a anterior parou. Ganchos instalados no agente registram a sessão em silêncio, e o servidor transforma o registro em páginas de texto comum. O que ele faz, quando vale a pena e como começar estão no @sec-apmemoria.
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
 Ele cobre a terceira gaveta da peça 6, o meio do caminho. Decisão que precisa sobreviver com garantia continua indo pra um documento dentro do projeto, revisado e versionado. A memória automática guarda o que talvez importe depois; o documento guarda o que com certeza importa.

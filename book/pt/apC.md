@@ -56,7 +56,7 @@ Antes das perguntas, um hábito que eu trouxe dos testes de origem de modelos (@
 > Separe o anúncio em três colunas: o que alguém de fora mediu, o que é só a palavra de quem vende e o que ninguém sabe. Quase todo o barulho mora na do meio.
 
 <!-- src: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia -->
-A lista completa que eu uso, com os casos de 2026, está em @sec-como-ler-anuncio. Esta é a versão de bolso.
+A lista completa que eu uso, com os casos de 2026, está na @sec-como-ler-anuncio. Esta é a versão de bolso.
 
 1. **Quem ganha dinheiro se você acreditar?** Atrás da frase costuma ter um [IPO]{.gls key=ipo}, uma placa de vídeo pra vender ou um curso, e interesse financeiro não torna nada falso, só pede prova mais forte (@sec-ch14).
 2. **Alguém de fora consegue testar?** "Perigoso demais pra lançar", consórcio fechado e lista de espera são alegações até um independente medir, e esse roteiro já tinha sido usado em 2019 (@sec-ch01, @sec-ch14).

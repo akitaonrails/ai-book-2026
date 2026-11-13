@@ -40,4 +40,4 @@ Se quiser um meio-termo, existe um apêndice opcional, *A máquina por dentro, s
 ## Pra quem quiser ir mais fundo
 
 <!-- src: original -->
-Pra quem quiser os livros e vídeos que explicam a mecânica de verdade, deixei uma lista curta no fim, em @sec-apleituras. Vai do mais fácil ao mais técnico, com o que é gratuito e o que tem em português. Por ora, vire a página. A história começa em fevereiro de 2026, com uma frase que eu nunca disse circulando pela internet com o meu nome.
+Pra quem quiser os livros e vídeos que explicam a mecânica de verdade, deixei uma lista curta no fim, no @sec-apleituras. Vai do mais fácil ao mais técnico, com o que é gratuito e o que tem em português. Por ora, vire a página. A história começa em fevereiro de 2026, com uma frase que eu nunca disse circulando pela internet com o meu nome.
