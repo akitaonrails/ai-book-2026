@@ -136,7 +136,7 @@ A conferência também é fechada. A marca só pode ser medida por um detector q
 ## A marca d'água do Claude: a reação, o alcance e um texto de três modelos {#sec-aptecnico-watermark-2}
 
 <!-- src: original -->
-Complemento de @sec-aptecnico-watermark. O @sec-ch04 resume em dois parágrafos o que a marca d'água do Claude prova e o que um detector não prova. Aqui fica o resto da história: como a marca chegou, o que ela deixa de fora e o texto que eu mesmo escrevi sobre ela.
+Complemento da @sec-aptecnico-watermark. O @sec-ch04 resume em dois parágrafos o que a marca d'água do Claude prova e o que um detector não prova. Aqui fica o resto da história: como a marca chegou, o que ela deixa de fora e o texto que eu mesmo escrevi sobre ela.
 
 ### Como a marca chegou
 
@@ -327,7 +327,7 @@ Na quarta versão, a de setembro, o tier A começa em 83. Em setembro a tabela t
 ### As contas de custo refeitas
 
 <!-- src: 2026/07/09/llm-benchmark-grok-4-5-gpt-5-6-sol -->
-Uma execução de agente relê o próprio histórico do cache a cada volta do laço (o [prompt caching]{.gls key=prompt-caching} de @sec-ch03), e eu não estava contando essas releituras direito. Em julho refiz a conta: uma rodada do Opus 4.7, que eu reportava por volta de 1 dólar, custava uns 7. A tarifa era a mesma de sempre; a conta furada era a minha.
+Uma execução de agente relê o próprio histórico do cache a cada volta do laço (o [prompt caching]{.gls key=prompt-caching} do @sec-ch03), e eu não estava contando essas releituras direito. Em julho refiz a conta: uma rodada do Opus 4.7, que eu reportava por volta de 1 dólar, custava uns 7. A tarifa era a mesma de sempre; a conta furada era a minha.
 
 <!-- src: ref:llm-coding-benchmark/docs/success_report.v2.md -->
 No começo de agosto, um leitor do repositório achou um erro no programa que extraía as métricas das execuções no OpenCode. Ele registrava só o último passo de cada fase, em vez da soma de todos. Os custos de todas as rodadas naquela ferramenta antes de 1º de agosto estavam subestimados de 40 a 90 vezes. O MiniMax M3, que parecia dos mais baratos, era na verdade o que mais consumia texto entre todos os rodados ali.

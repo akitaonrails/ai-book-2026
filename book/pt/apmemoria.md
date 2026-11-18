@@ -25,12 +25,12 @@ Uma cena que se repetiu o ano inteiro no meu computador. O Claude Code empaca nu
 <!-- src: 2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos -->
 Nessa hora, quem guarda o contexto sou eu. O programador vira o cache do agente, a memória rápida que ele consulta porque não tem a dele.
 
-Este apêndice é sobre a ferramenta que eu escrevi pra parar de fazer isso, o ai-memory [@akita2026aimemory; @aimemory2026site]. O kit de segurança de @sec-apB já mostrou a ideia em poucas linhas, como a sexta peça. Aqui vai a versão completa: por que vale a pena, o que ela faz, quando você não precisa dela e como começar.
+Este apêndice é sobre a ferramenta que eu escrevi pra parar de fazer isso, o ai-memory [@akita2026aimemory; @aimemory2026site]. O kit de segurança do @sec-apB já mostrou a ideia em poucas linhas, como a sexta peça. Aqui vai a versão completa: por que vale a pena, o que ela faz, quando você não precisa dela e como começar.
 
 ## Por que memória importa
 
 <!-- src: 2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos -->
-Você já conhece o peixinho de @sec-ch02. O modelo não lembra de nada entre uma conversa e outra, a mesa de trabalho começa vazia a cada sessão, e quando ela enche no meio do caminho a [compactação]{.gls key=compactacao} troca o começo da conversa por um resumo que perde detalhe. Uma [janela de contexto]{.gls key=janela-de-contexto} enorme não muda isso: ela é grande, mas pertence só à sessão atual.
+Você já conhece o peixinho do @sec-ch02. O modelo não lembra de nada entre uma conversa e outra, a mesa de trabalho começa vazia a cada sessão, e quando ela enche no meio do caminho a [compactação]{.gls key=compactacao} troca o começo da conversa por um resumo que perde detalhe. Uma [janela de contexto]{.gls key=janela-de-contexto} enorme não muda isso: ela é grande, mas pertence só à sessão atual.
 
 O que se perde é justamente a parte cara do trabalho. O código mostra o que sobreviveu. A sessão guarda o resto: o experimento que falhou, o defeito que só aparecia de vez em quando, o motivo de a gente ter mudado de ideia depois de três horas. Fechou o agente, isso some.
 
@@ -111,7 +111,7 @@ E a passagem de turno tem dono. Num servidor compartilhado, as páginas são de 
 ## Quando vale a pena, e quando não
 
 <!-- src: 2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory -->
-Se você usa um agente só, num computador só, e fica nele, talvez não precise de nada disso. A compactação do próprio agente mais uma pasta de documentos bem cuidada, como no @sec-ch02 e na peça 6 de @sec-apB, resolvem o essencial.
+Se você usa um agente só, num computador só, e fica nele, talvez não precise de nada disso. A compactação do próprio agente mais uma pasta de documentos bem cuidada, como no @sec-ch02 e na peça 6 do @sec-apB, resolvem o essencial.
 
 <!-- src: ref:ai-memory/README.md -->
 O ai-memory começa a pagar o investimento em quatro situações:
@@ -151,4 +151,4 @@ A partir daí, você conversa com o agente normalmente. Pergunte "onde a gente p
 Esses dois comandos são um retrato de outubro de 2026. Existem caminhos pra Docker, pacotes pra Arch Linux e Fedora, um aplicativo de barra de menu pro macOS e um modo pra Windows, e todos mudam de versão em versão. As instruções atualizadas, em português inclusive, ficam no site do projeto, aimemory.sh [@aimemory2026site]. Comece por lá.
 
 <!-- src: 2026/09/02/ai-memory-2-0-melhor-sistema-memoria-agentes-e-times -->
-Você não precisa do meu programa pra seguir o princípio. Pode ser ele, pode ser outro, pode ser uma pasta de arquivos de texto mantida na mão. O que importa é que a memória do projeto more num lugar seu, num formato que você lê, e que sobreviva à troca de agente, de máquina e de empresa. É a mesma conta de @sec-ch20: o modelo se aluga de quem estiver melhor no mês, e a memória fica com você.
+Você não precisa do meu programa pra seguir o princípio. Pode ser ele, pode ser outro, pode ser uma pasta de arquivos de texto mantida na mão. O que importa é que a memória do projeto more num lugar seu, num formato que você lê, e que sobreviva à troca de agente, de máquina e de empresa. É a mesma conta do @sec-ch20: o modelo se aluga de quem estiver melhor no mês, e a memória fica com você.

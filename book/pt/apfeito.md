@@ -41,17 +41,17 @@ Os primeiros rascunhos dos capítulos da estrutura inicial ficaram prontos no me
 <!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
 O primeiro resultado várias vezes não prestou. Na primeira rodada, os leitores simulados apontaram 73 falhas de lógica.
 
-A conclusão de @sec-ch20 ia além do que o meu teste conseguia medir. Um capítulo argumentava de um jeito que nunca perde, pondo toda falha do agente na conta do pedido. Quatro dos cinco leitores foram mandados pro capítulo errado pelo guia de leitura.
+A conclusão do @sec-ch20 ia além do que o meu teste conseguia medir. Um capítulo argumentava de um jeito que nunca perde, pondo toda falha do agente na conta do pedido. Quatro dos cinco leitores foram mandados pro capítulo errado pelo guia de leitura.
 
 Na segunda rodada, uma frase de desculpa posta ao lado de uma contradição fez os cinco notarem a contradição que antes três tinham deixado passar. Cada falha dessas virou uma regra escrita, e as rodadas só pararam quando os problemas apontados deixaram de voltar: 73 anotações de lógica na primeira, 53 na segunda, 51 na terceira.
 
 <!-- src: original -->
-Os rascunhos de 13 de outubro são os primeiros dez por cento de @sec-ch05: impressionam e quase não dizem nada sobre o resto. Tudo o que vem depois é leitura, corte e correção.
+Os rascunhos de 13 de outubro são os primeiros dez por cento do @sec-ch05: impressionam e quase não dizem nada sobre o resto. Tudo o que vem depois é leitura, corte e correção.
 
 ## É só slop?
 
 <!-- src: original -->
-Slop é o volume sem cuidado de @sec-ch10: texto que ocupa espaço e não responde por nada. A diferença que eu consigo mostrar está em três coisas que você pode conferir.
+Slop é o volume sem cuidado do @sec-ch10: texto que ocupa espaço e não responde por nada. A diferença que eu consigo mostrar está em três coisas que você pode conferir.
 
 A primeira é a origem. Cada parágrafo do livro, no arquivo de onde ele sai, traz uma marca dizendo de qual post veio ou se foi escrito pro livro, e cada referência de fora está na bibliografia. O posfácio explica como isso funciona.
 
@@ -75,7 +75,7 @@ Agora a parte que eu queria deixar registrada, e é opinião minha, apoiada num 
 Um livro é um produto, e este foi tratado como um. Ele tem uma especificação: a estrutura inteira escrita num lugar só, com o que cada capítulo responde e de quais posts sai. Tem testes: verificações automáticas que impedem a montagem do livro quando uma referência aponta pro nada, quando um número aparece diferente em dois capítulos ou quando um parágrafo perde a origem. Tem revisões, versões numeradas e um registro público do que mudou em cada uma.
 
 <!-- src: original -->
-Nada disso é novidade, e esse é o ponto. É a mesma rede de segurança de @sec-ch19, testes, integração contínua, revisão desconfiada, voltar atrás rápido, aplicada a texto. É o que fez a newsletter de @sec-ch06 ir pro ar em menos de uma semana e continuar funcionando. É o que fez o editor de @sec-ch05 sair em umas 30 horas onde eu, sozinho, levaria umas 200: eu sabia o que um editor precisava ter e onde ele costuma quebrar.
+Nada disso é novidade, e esse é o ponto. É a mesma rede de segurança do @sec-ch19, testes, integração contínua, revisão desconfiada, voltar atrás rápido, aplicada a texto. É o que fez a newsletter do @sec-ch06 ir pro ar em menos de uma semana e continuar funcionando. É o que fez o editor do @sec-ch05 sair em umas 30 horas onde eu, sozinho, levaria umas 200: eu sabia o que um editor precisava ter e onde ele costuma quebrar.
 
 <!-- src: original -->
 Os agentes não tomaram nenhuma das decisões abaixo, e cada uma está registrada no repositório.

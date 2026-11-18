@@ -58,7 +58,7 @@ naming:
   - "OpenAI tiers (the blog is inconsistent; the book fixes one form): hyphen + capitalised tier, GPT-5.4 Sol, GPT-5.6 Sol/Luna/Terra, GPT-6 Sol/Luna/Astra; a tier alone is capitalised too (o Sol, o Terra)."
   - "Z.ai (never z.ai). 'Sprint' is feminine (a sprint)."
   - "A cross-reference used as subject or after como/que/porque takes the article: o @sec-ch15."
-  - "PT-BR cross-references following em take the definite article: no @sec-ch15, no @sec-apB, na @sec-aptecnico-rag, nos @sec-creditos. Repeat the contraction in coordinated references: no @sec-ch04 e no @sec-ch15."
+  - "PT-BR cross-references to numbered units take the definite article, contracted with the preposition before them: no/do/pro @sec-ch15, no @sec-apB, na/da @sec-aptecnico-rag, nos @sec-creditos, desde o @sec-ch05, veja o @sec-ch03. Repeat the contraction in coordinated references: no @sec-ch04 e no @sec-ch15, do @sec-ch06 e do @sec-ch07. rake check flags a bare em/de/pra before a numbered reference."
   - "Book and paper titles in italics."
 
 # The mechanical subset of `naming`, enforced by scripts/lint_chapter.rb (errors).
@@ -71,6 +71,10 @@ naming_rules:
   - {pattern: '\bGPT-(\d(?:\.\d)?)-(Sol|Luna|Terra|Astra)\b', use: 'GPT-\1 \2', langs: [pt, en]}
   - {pattern: '\bz\.ai\b', use: 'Z.ai', langs: [pt, en]}
   - {pattern: '(?i:\b(um|o|este|esse|aquele) sprint\b)', use: 'a/uma/esta/essa/aquela sprint (feminine)', langs: [pt]}
+  # A numbered cross-reference renders as "Capítulo 5", "Apêndice B" or "Seção 15.7", so the
+  # preposition before it takes the article: "no/do/pro Capítulo 5", "na/da Seção 15.7".
+  - {pattern: '\b(?:[Ee]m|[Dd]e|[Pp]ra) (@sec-(?:ch\d+b?|ap[A-Za-z]+))\b(?!-)', use: 'no/do/pro \1', langs: [pt]}
+  - {pattern: '\b(?:[Ee]m|[Dd]e) (@sec-(?:(?:ch\d+b?|ap[A-Za-z]+)-[a-z0-9-]+|como-ler-anuncio))', use: 'na/da \1', langs: [pt]}
 
 # docs/EDITORIAL-RULES.md R6: figures that recur across chapters. Each value
 # carries its scope; a unit that states the figure must use one of these

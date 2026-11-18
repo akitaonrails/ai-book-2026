@@ -37,14 +37,14 @@ Das análises saiu uma proposta de estrutura: cinco partes, cada uma respondendo
 <!-- src: original -->
 Antes de escalar, um capítulo piloto. O escolhido foi @sec-ch05, e ele serviu pra calibrar a voz e descobrir as dúvidas que um agente teria no meio do caminho. Cada dúvida resolvida virou uma regra escrita. Uma delas: quando o resumo do capítulo e o post discordam num detalhe, vale o post.
 
-Essas regras foram pra um documento que todo agente lia antes de escrever, junto com o guia de voz, que herda as regras do meu blog, e com um arquivo de continuidade dizendo qual capítulo explica cada conceito e como cada personagem se chama. É o [arquivo de instruções do projeto]{.gls key=agents-md} de @sec-ch09, na escala de um livro.
+Essas regras foram pra um documento que todo agente lia antes de escrever, junto com o guia de voz, que herda as regras do meu blog, e com um arquivo de continuidade dizendo qual capítulo explica cada conceito e como cada personagem se chama. É o [arquivo de instruções do projeto]{.gls key=agents-md} do @sec-ch09, na escala de um livro.
 
 <!-- src: original -->
 Com o contrato pronto, os capítulos foram rascunhados em paralelo, em levas, um agente por capítulo. Agentes trabalhando ao mesmo tempo se contradizem, e isso aconteceu.
 
 Um capítulo dizia que o FrankMD teve uns 130 commits em três dias; outro, que teve 212 em 19 dias. Os dois números vinham dos posts e estavam certos, só que eram janelas diferentes. Um registro de integração juntou esses conflitos, e a regra foi explicitar a janela em cada capítulo.
 
-Por cima de tudo roda um verificador automático, o equivalente da [integração contínua]{.gls key=ci} de @sec-ch06. Ele reprova travessão, frases proibidas pelo guia de voz, link solto no meio do texto, citação que não existe na bibliografia e capítulo sem marca de origem. Capítulo com erro não passa.
+Por cima de tudo roda um verificador automático, o equivalente da [integração contínua]{.gls key=ci} do @sec-ch06. Ele reprova travessão, frases proibidas pelo guia de voz, link solto no meio do texto, citação que não existe na bibliografia e capítulo sem marca de origem. Capítulo com erro não passa.
 
 ## O que a conferência pegou
 
@@ -84,10 +84,10 @@ Copidesque confere o texto. Ele deixa passar a pergunta que importa num livro pr
 Cada um foi um agente só de leitura, lendo o livro inteiro em ordem, como aquela pessoa leria, com a instrução de ser leitor e não editor. Cada um devolveu uma nota por capítulo, o que o fez se perder ou se entediar e as falhas de lógica que encontrou. Um editor juntou tudo. Falha de lógica, conferida contra o texto e os posts, era corrigida independentemente de voto; questão de clareza só entrava se mais de um leitor levantasse; gosto de um leitor só ficava de fora.
 
 <!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
-A primeira leitura deu a medida do desequilíbrio. Histórias e ferramentas práticas funcionavam pra todo mundo, e o miolo cheio de medição, os capítulos de @sec-ch11 a @sec-ch13, perdia quem não programa. Os cinco pegaram as mesmas falhas de argumento: uma conclusão maior que a evidência no @sec-ch20, um raciocínio que nunca perde no @sec-ch09, um guia de leitura que mandava quatro dos cinco pro capítulo errado. Cada padrão virou uma regra escrita, que os agentes passaram a ler antes de editar.
+A primeira leitura deu a medida do desequilíbrio. Histórias e ferramentas práticas funcionavam pra todo mundo, e o miolo cheio de medição, do @sec-ch11 ao @sec-ch13, perdia quem não programa. Os cinco pegaram as mesmas falhas de argumento: uma conclusão maior que a evidência no @sec-ch20, um raciocínio que nunca perde no @sec-ch09, um guia de leitura que mandava quatro dos cinco pro capítulo errado. Cada padrão virou uma regra escrita, que os agentes passaram a ler antes de editar.
 
 <!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
-Daí veio o rebalanceamento. Umas 8 mil palavras de caderno de laboratório saíram dos capítulos pra @sec-aptecnico, cada parágrafo com a sua marca de origem; a lista de leituras virou apêndice; uma seção inteira foi guardada fora do livro enquanto a verificação estava pendente; cada capítulo passou a orientar o leitor antes do primeiro jargão; e o epílogo ganhou uma lista do que fazer nesta semana, por tipo de leitor. Foram três rodadas, ler, editar e ler de novo, porque a edição conserta o problema velho e cria o novo: as falhas de lógica caíram de 73 pra 53 e 51, e a revisão parou quando os problemas deixaram de voltar.
+Daí veio o rebalanceamento. Umas 8 mil palavras de caderno de laboratório saíram dos capítulos pro @sec-aptecnico, cada parágrafo com a sua marca de origem; a lista de leituras virou apêndice; uma seção inteira foi guardada fora do livro enquanto a verificação estava pendente; cada capítulo passou a orientar o leitor antes do primeiro jargão; e o epílogo ganhou uma lista do que fazer nesta semana, por tipo de leitor. Foram três rodadas, ler, editar e ler de novo, porque a edição conserta o problema velho e cria o novo: as falhas de lógica caíram de 73 pra 53 e 51, e a revisão parou quando os problemas deixaram de voltar.
 
 <!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
 Os mesmos cinco leitores conferiram depois os capítulos que ganharam a minha história de antes de 2026. O veredito virou regra: a história do narrador convence quando é evidência que o leitor consegue checar, como o aviso com data ao lado do erro admitido, e atrapalha quando vira currículo. As linhas que três ou quatro deles marcaram como exibição saíram do livro.
@@ -97,7 +97,7 @@ Os mesmos cinco leitores conferiram depois os capítulos que ganharam a minha hi
 <!-- src: original -->
 O livro cita muitos programas meus, e boa parte foi experimento de poucos dias, feito pra medir alguma coisa e deixado no estado em que parou. Em outubro de 2026, o que eu mantinha de fato era pouca coisa.
 
-De um lado, as ferramentas pra trabalhar com agentes: o ai-memory (@sec-apmemoria), o ai-jail (@sec-apB), o ai-usagebar, que mostra o consumo dos planos de IA, e o ghpending, que junta as pendências dos meus repositórios. Do outro, os benchmarks: o de programação de @sec-ch11, o dos classificadores de @sec-ch13 e o das linguagens de @sec-ch18. A série Frank continua publicada, cada projeto no ponto em que eu o deixei. A lista completa está no GitHub, em github.com/akitaonrails.
+De um lado, as ferramentas pra trabalhar com agentes: o ai-memory (@sec-apmemoria), o ai-jail (@sec-apB), o ai-usagebar, que mostra o consumo dos planos de IA, e o ghpending, que junta as pendências dos meus repositórios. Do outro, os benchmarks: o de programação do @sec-ch11, o dos classificadores do @sec-ch13 e o das linguagens do @sec-ch18. A série Frank continua publicada, cada projeto no ponto em que eu o deixei. A lista completa está no GitHub, em github.com/akitaonrails.
 
 ## O que continua sendo meu
 
@@ -108,10 +108,10 @@ No @sec-ch09 eu contei que o texto do blog sobre como falar com o Claude Code fo
 Não foi a primeira vez no ano. Em abril, o Claude Code traduziu vinte anos de blog em pouco mais de um dia e meio (@sec-interlude1). Noventa por cento correu liso, e os outros dez só se resolveram porque alguém leu a lista do que tinha falhado e foi atrás de outro caminho.
 
 <!-- src: 2026/10/12/llms-agentes-competente-o-suficiente -->
-Esse é o ponto de @sec-ch20 aplicado ao próprio livro. Qualquer um dos bons modelos de outubro de 2026 teria escrito rascunhos parecidos, porque o modelo virou commodity, uma mercadoria quase intercambiável. O que fez o processo funcionar foi o que está em volta dele: o inventário, o contrato escrito, o verificador automático, as fontes como [oráculo]{.gls key=oraculo}, o rastro por parágrafo. É a mesma engenharia velha que eu defendi em cada capítulo, aplicada a texto.
+Esse é o ponto do @sec-ch20 aplicado ao próprio livro. Qualquer um dos bons modelos de outubro de 2026 teria escrito rascunhos parecidos, porque o modelo virou commodity, uma mercadoria quase intercambiável. O que fez o processo funcionar foi o que está em volta dele: o inventário, o contrato escrito, o verificador automático, as fontes como [oráculo]{.gls key=oraculo}, o rastro por parágrafo. É a mesma engenharia velha que eu defendi em cada capítulo, aplicada a texto.
 
 <!-- src: original -->
-O repositório registra o primeiro commit e os rascunhos dos capítulos da estrutura inicial no mesmo dia. São os primeiros dez por cento de @sec-ch05: impressionam e quase não dizem nada sobre o resto. Os outros noventa por cento são leitura, corte e correção.
+O repositório registra o primeiro commit e os rascunhos dos capítulos da estrutura inicial no mesmo dia. São os primeiros dez por cento do @sec-ch05: impressionam e quase não dizem nada sobre o resto. Os outros noventa por cento são leitura, corte e correção.
 
 E essa parte é minha. As experiências do livro são as que eu vivi, e as opiniões são as que eu escrevi ao longo do ano, nenhuma inventada pra preencher capítulo. A estrutura foi aprovada por mim. Nenhum capítulo entra no livro sem que eu leia e aprove, e o que eu mando refazer volta pro mesmo processo.
 

@@ -18,7 +18,7 @@ Mas eu sei que muita gente chega aqui com uma preocupação específica e pouca 
 <!-- src: original -->
 Se você chegou com uma pergunta específica, estes são os capítulos que respondem a ela. Cada um dá pra ler sozinho.
 
-- E o meu emprego? O @sec-ch18 e o @sec-ch19b; pra mudanças na empresa, o @sec-ch19; pra próximos passos, o epílogo (@sec-epilogo). As três bolhas de @sec-apbolhas mostram o padrão de outras crises.
+- E o meu emprego? O @sec-ch18 e o @sec-ch19b; pra mudanças na empresa, o @sec-ch19; pra próximos passos, o epílogo (@sec-epilogo). As três bolhas do @sec-apbolhas mostram o padrão de outras crises.
 - Tem alguém ali dentro? Vem aí uma superinteligência? O @sec-ch01, o @sec-ch14 e o @sec-ch20.
 - Você é gestor e estão te vendendo uma transformação com IA? O @sec-ch14, o @sec-ch19 e as listas de conferência do @sec-apC.
 - É seguro deixar a IA mexer nas suas coisas? Ela espiona? O @sec-ch15, o @sec-ch17 e o kit mínimo do @sec-apB.

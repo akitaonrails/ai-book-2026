@@ -232,6 +232,32 @@ class TestLintChapter < ToolTest
     assert_includes lint("\n<!-- src: original -->\n*Rodei o GPT 5* sem URL.\n").out, "naming:"
   end
 
+  # Guards the cross-reference article rules in the real book/continuity.yml:
+  # "Capítulo 5" and "Seção 15.7" need the contracted article, unnumbered
+  # targets (rendered as their title) don't.
+  def test_real_naming_rules_require_the_article_before_numbered_references
+    real = YAML.load_file(File.join(FixtureData::REPO_ROOT, "book", "continuity.yml"))
+    fx.write("book/continuity.yml", { "naming_rules" => real["naming_rules"] }.to_yaml)
+    res = lint(<<~MD)
+
+      <!-- src: original -->
+      Em @sec-ch05 você viu, como em @sec-apB e na peça de @sec-ch19b, o que fica pra @sec-aptecnico.
+
+      A lista está em @sec-como-ler-anuncio e em @sec-aptecnico-rag.
+
+      No @sec-ch05, na @sec-aptecnico-rag, do @sec-apB, pra @sec-ch15-nas e em @sec-antes estão certos.
+    MD
+    assert_exit 1, res
+    n = line_of("Em @sec-ch05")
+    assert_includes res.out, "chx.md:#{n}: error: naming: 'Em @sec-ch05' should be 'no/do/pro @sec-ch05'"
+    assert_includes res.out, "naming: 'em @sec-apB' should be 'no/do/pro @sec-apB'"
+    assert_includes res.out, "naming: 'de @sec-ch19b' should be 'no/do/pro @sec-ch19b'"
+    assert_includes res.out, "naming: 'pra @sec-aptecnico' should be 'no/do/pro @sec-aptecnico'"
+    assert_includes res.out, "naming: 'em @sec-como-ler-anuncio' should be 'na/da @sec-como-ler-anuncio'"
+    assert_includes res.out, "naming: 'em @sec-aptecnico-rag' should be 'na/da @sec-aptecnico-rag'"
+    assert_includes res.out, "6 error(s)", "the correct line adds none"
+  end
+
   # Guards the opt-in: without naming_rules in continuity.yml (or the file) nothing is checked.
   def test_naming_rules_absent
     assert_exit 0, lint("\n<!-- src: original -->\nO GPT 5 na z.ai.\n")

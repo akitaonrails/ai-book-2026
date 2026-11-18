@@ -209,4 +209,4 @@ Continuar fazendo as mesmas perguntas por anos, esperando respostas prontas e re
 Naquela madrugada, o carro girando no ar me divertiu. A mudança nos sites já alterava meu trabalho. Eu queria poder testar mais ideias, descartar as ruins e usar meu tempo pra descobrir o que valia construir depois.
 
 <!-- src: original -->
-Pra isso, não precisei esperar uma máquina consciente, nem um modelo que tivesse aprendido tudo que falta no mundo. Usei as ferramentas que estavam disponíveis. É por isso que a pergunta sobre os limites da IA, adiada no fim de @sec-ch19, continua importante: quanto da mudança já cabe no que temos, mesmo que a próxima versão não dê salto nenhum?
+Pra isso, não precisei esperar uma máquina consciente, nem um modelo que tivesse aprendido tudo que falta no mundo. Usei as ferramentas que estavam disponíveis. É por isso que a pergunta sobre os limites da IA, adiada no fim do @sec-ch19, continua importante: quanto da mudança já cabe no que temos, mesmo que a próxima versão não dê salto nenhum?

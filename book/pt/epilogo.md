@@ -29,7 +29,7 @@ Começo pelo concreto: dois ou três passos pra esta semana, conforme quem você
 <!-- src: original -->
 Se você trabalha com escritório, números ou papéis:
 
-- escolha uma tarefa repetitiva que você já sabe fazer bem, como o relatório novo a partir do velho ou o rascunho de um e-mail difícil, e peça ao chatbot com as quatro partes de @sec-ch09: o que você quer, como, o que você não quer e como saber que deu certo;
+- escolha uma tarefa repetitiva que você já sabe fazer bem, como o relatório novo a partir do velho ou o rascunho de um e-mail difícil, e peça ao chatbot com as quatro partes do @sec-ch09: o que você quer, como, o que você não quer e como saber que deu certo;
 - confira o resultado contra o que você sabe que está certo e anote onde ele errou; número, data e regra se conferem na fonte (@sec-ch04);
 - deixe dado de cliente e da empresa fora do chatbot até saber o que o serviço guarda e o que a sua empresa permite.
 
@@ -38,7 +38,7 @@ Se você é gestor:
 
 - antes de comprar mais licença, escolha um processo, meça o que chega ao cliente hoje e meça de novo depois (@sec-ch19);
 - reserve uma ou duas semanas pro time treinar o jeito novo sem meta de entrega;
-- diante de um anúncio ou de um consultor, use as perguntas de @sec-apC.
+- diante de um anúncio ou de um consultor, use as perguntas do @sec-apC.
 
 <!-- src: original -->
 Se você é pai ou mãe, e o seu filho adolescente pergunta se a IA vai acabar com o mundo:
@@ -88,12 +88,12 @@ A primeira é o mínimo sobre a máquina. Um [LLM]{.gls} gera o texto mais prov�
 Se quiser ir mais fundo, o @sec-apmecanica mostra o mecanismo sem matemática, e o @sec-apleituras traz uma lista de leitura pra vários níveis.
 
 <!-- src: 2026/04/11/vs-code-e-o-novo-cartao-perfurado -->
-Vale o mesmo pro fundamento do seu próprio ofício. Pense no programador sem base de @sec-ch18, que testa com 300 linhas e não imagina o milhão. Com [agente]{.gls} na mão, quem tem base aprende mais rápido. Quem não tem só terceiriza a própria ignorância.
+Vale o mesmo pro fundamento do seu próprio ofício. Pense no programador sem base do @sec-ch18, que testa com 300 linhas e não imagina o milhão. Com [agente]{.gls} na mão, quem tem base aprende mais rápido. Quem não tem só terceiriza a própria ignorância.
 
 ### Julgamento
 
 <!-- src: original -->
-A segunda é julgamento, a capacidade de olhar uma resposta e saber se ela presta. O melhor teste que eu conheço é o de @sec-ch18: você sabe explicar por que a resposta certa é a certa? Se sabe, a máquina digita pra você. Se não sabe, ela digita do mesmo jeito, e você não percebe quando ela erra.
+A segunda é julgamento, a capacidade de olhar uma resposta e saber se ela presta. O melhor teste que eu conheço é o do @sec-ch18: você sabe explicar por que a resposta certa é a certa? Se sabe, a máquina digita pra você. Se não sabe, ela digita do mesmo jeito, e você não percebe quando ela erra.
 
 Julgamento se treina fazendo, errando e conferindo. O agente deixa a parte do fazer muito mais barata, e dá pra testar e descartar uma hipótese atrás da outra, como no @sec-ch08. A parte do conferir continua inteira com você.
 
@@ -103,7 +103,7 @@ Uma conta que eu repetia no tempo do canal: curso dá uns 1% de introdução, e 
 ### O seu domínio
 
 <!-- src: original -->
-A terceira é o seu ofício. Lembre do mapa de @sec-ch20: o modelo enxerga em detalhe o que o mundo publicou e é cego pro que ficou fechado. As regras não escritas da sua empresa, o cliente difícil, a exceção que só você conhece, o motivo pelo qual aquela norma existe: nada disso entrou no treino.
+A terceira é o seu ofício. Lembre do mapa do @sec-ch20: o modelo enxerga em detalhe o que o mundo publicou e é cego pro que ficou fechado. As regras não escritas da sua empresa, o cliente difícil, a exceção que só você conhece, o motivo pelo qual aquela norma existe: nada disso entrou no treino.
 
 <!-- src: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar -->
 Eu aprendi isso por dentro, nos anos em que integrei sistemas de empresas grandes (@sec-ch20): não tem como modelar uma coisa que você não conhece. A máquina esbarra no mesmo limite, sem nunca ter passado um dia dentro da sua empresa.
@@ -129,11 +129,11 @@ Em julho, depois de meses publicando tabelas, escrevi a frase que eu mais queria
 <!-- src: original -->
 Conferir dá menos trabalho do que parece, e as listas práticas já estão no livro, cada uma onde o assunto pedia:
 
-- pra usar chatbot em assunto sério, as oito regras de @sec-ch04, com os cuidados extras pra saúde, dinheiro e notícias;
-- pra ler uma tabela de [benchmark]{.gls}, @sec-ch11, e pra ler um anúncio, as perguntas de @sec-como-ler-anuncio, com as duas listas resumidas no @sec-apC;
-- pra deixar um programa mexer nos seus arquivos sem perder nada, os hábitos de @sec-ch15 e o kit de @sec-apB;
-- pra decidir se confia num software feito com IA, as perguntas de @sec-ch16;
-- contra golpe e [deepfake]{.gls}, os hábitos de @sec-ch17.
+- pra usar chatbot em assunto sério, as oito regras do @sec-ch04, com os cuidados extras pra saúde, dinheiro e notícias;
+- pra ler uma tabela de [benchmark]{.gls}, @sec-ch11, e pra ler um anúncio, as perguntas da @sec-como-ler-anuncio, com as duas listas resumidas no @sec-apC;
+- pra deixar um programa mexer nos seus arquivos sem perder nada, os hábitos do @sec-ch15 e o kit do @sec-apB;
+- pra decidir se confia num software feito com IA, as perguntas do @sec-ch16;
+- contra golpe e [deepfake]{.gls}, os hábitos do @sec-ch17.
 
 <!-- src: original -->
 Quase todas terminam no mesmo gesto, que é subir até a fonte primária: o estudo, o contrato, o dado oficial. E a fonte primária mais útil pra quem usa IA no trabalho é um teste seu. Pegue uma tarefa real, que você já sabe resolver, dê pra duas ferramentas, rode mais de uma vez e compare com o que você sabe que está certo. Esse é o benchmark que interessa pra você, e nenhum anúncio publica.
@@ -141,7 +141,7 @@ Quase todas terminam no mesmo gesto, que é subir até a fonte primária: o estu
 ## Sem entregar o volante
 
 <!-- src: 2026/02/08/rant-ia-acabou-com-programadores -->
-Em fevereiro, no meio da briga sobre se a IA tinha acabado com os programadores, escrevi uma linha que ainda uso: nunca pergunte a um martelo como dirigir a sua empresa. O martelo de @sec-ch01 é excelente pra muito prego, como o rascunho, o resumo, a tradução, o relatório novo a partir do velho e a primeira versão do código. Use, e use bastante.
+Em fevereiro, no meio da briga sobre se a IA tinha acabado com os programadores, escrevi uma linha que ainda uso: nunca pergunte a um martelo como dirigir a sua empresa. O martelo do @sec-ch01 é excelente pra muito prego, como o rascunho, o resumo, a tradução, o relatório novo a partir do velho e a primeira versão do código. Use, e use bastante.
 
 <!-- src: original -->
 A linha que eu não cruzo é a da decisão. A máquina pode propor, pesquisar, comparar e escrever. Decide quem responde pelo resultado. Na prática, isso vira poucos hábitos:

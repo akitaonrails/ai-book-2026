@@ -71,4 +71,4 @@ A lista completa que eu uso, com os casos de 2026, está na @sec-como-ler-anunci
 11. **Você precisa disso hoje?** Quase toda manchete grande de 2026 mudou de forma em poucas semanas, e eu só adoto uma ferramenta nova quando sinto a falta dela doer (@sec-ch14).
 
 <!-- src: original -->
-Se você vai usar um chatbot pra investigar o anúncio, junte a esta a lista de @sec-ch04: perguntar sem entregar a própria opinião, abrir a fonte e subir até a [fonte primária]{.gls key=fonte-primaria} valem tanto quanto as perguntas acima.
+Se você vai usar um chatbot pra investigar o anúncio, junte a esta a lista do @sec-ch04: perguntar sem entregar a própria opinião, abrir a fonte e subir até a [fonte primária]{.gls key=fonte-primaria} valem tanto quanto as perguntas acima.
