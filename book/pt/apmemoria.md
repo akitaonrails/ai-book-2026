@@ -35,7 +35,7 @@ Você já conhece o peixinho de @sec-ch02. O modelo não lembra de nada entre um
 O que se perde é justamente a parte cara do trabalho. O código mostra o que sobreviveu. A sessão guarda o resto: o experimento que falhou, o defeito que só aparecia de vez em quando, o motivo de a gente ter mudado de ideia depois de três horas. Fechou o agente, isso some.
 
 <!-- src: 2026/05/18/como-memoria-de-agentes-funciona-e-como-melhorar -->
-Em @sec-ch02 eu também mostrei o remédio caseiro, que continua valendo: memória de agente é texto, e você pode escrever os seus próprios bilhetes numa pasta de documentos do projeto. O defeito do remédio é a disciplina. Pra manter esses bilhetes em dia, eu ainda tenho que lembrar de pedir e conferir, toda vez, inclusive nos dias em que estou cansado.
+No @sec-ch02 eu também mostrei o remédio caseiro, que continua valendo: memória de agente é texto, e você pode escrever os seus próprios bilhetes numa pasta de documentos do projeto. O defeito do remédio é a disciplina. Pra manter esses bilhetes em dia, eu ainda tenho que lembrar de pedir e conferir, toda vez, inclusive nos dias em que estou cansado.
 
 ### O cadeado do fornecedor
 
@@ -43,7 +43,7 @@ Em @sec-ch02 eu também mostrei o remédio caseiro, que continua valendo: memór
 Os agentes grandes perceberam o problema e vêm ganhando funções de memória. O Claude Code faz as próprias anotações, o Cursor lembra de algumas coisas, e cada plataforma acrescenta mais um pouco a cada versão. Todas esbarram nos mesmos limites: as notas moram numa máquina só, pertencem a um agente só e saem de vista quando você troca de ferramenta ou passa o trabalho pra um colega.
 
 <!-- src: 2026/07/20/novidades-no-meu-ai-memory-cada-vez-melhor-pra-usar-com-suas-ias -->
-Em @sec-ch20 eu contei por que isso me incomoda: se a memória do projeto mora dentro da ferramenta de uma empresa, trocar de ferramenta vira mudança de casa, e quanto mais tempo você fica, mais pesada fica a mudança.
+No @sec-ch20 eu contei por que isso me incomoda: se a memória do projeto mora dentro da ferramenta de uma empresa, trocar de ferramenta vira mudança de casa, e quanto mais tempo você fica, mais pesada fica a mudança.
 
 <!-- src: 2026/05/18/como-memoria-de-agentes-funciona-e-como-melhorar -->
 As notas dessas ferramentas são texto, como o @sec-ch02 mostrou, então em tese dá pra levar. Na prática, cada uma guarda num lugar, num formato e numa máquina diferentes, e ninguém carrega a mudança por você.
@@ -56,7 +56,7 @@ As notas dessas ferramentas são texto, como o @sec-ch02 mostrou, então em tese
 O ai-memory é uma memória de longo prazo pra agentes de programação, de [código aberto]{.gls key=codigo-aberto}, distribuída como um [binário]{.gls key=binario} só, um programa único que não depende de outros serviços pra rodar. A promessa é que a sessão seguinte, em qualquer agente compatível, continue de onde a anterior parou, sem você explicar de novo a arquitetura, as tentativas que falharam e as perguntas em aberto.
 
 <!-- src: 2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel -->
-A origem do projeto, de maio de 2026, está contada em @sec-ch20. Começou como uma versão pra um usuário, numa máquina, num sistema operacional, e cresceu com gente de fora usando e mandando correção. Em 13 de outubro de 2026, saiu a versão 3.0.
+A origem do projeto, de maio de 2026, está contada no @sec-ch20. Começou como uma versão pra um usuário, numa máquina, num sistema operacional, e cresceu com gente de fora usando e mandando correção. Em 13 de outubro de 2026, saiu a versão 3.0.
 
 ### Como funciona
 
@@ -64,7 +64,7 @@ A origem do projeto, de maio de 2026, está contada em @sec-ch20. Começou como 
 O ciclo tem quatro tempos:
 
 - **captura**: [hooks]{.gls key=hook}, pequenos ganchos que o próprio agente dispara a cada evento, registram em silêncio o que acontece na sessão (pedidos, comandos usados, começo e fim), e um filtro tira dados sensíveis antes de qualquer coisa ser guardada;
-- **consolidação**: no fim da sessão, esse registro vira páginas legíveis numa wiki do projeto, no espírito da LLM Wiki de Karpathy que apareceu em @sec-ch02;
+- **consolidação**: no fim da sessão, esse registro vira páginas legíveis numa wiki do projeto, no espírito da LLM Wiki de Karpathy que apareceu no @sec-ch02;
 - **consulta**: a sessão seguinte, em qualquer agente compatível e em qualquer máquina, começa com um resumo curto e pode buscar no resto;
 - **passagem de turno**: um agente deixa pro próximo um bilhete formal dizendo o que foi feito, o que falhou e o que ficou aberto.
 
@@ -111,7 +111,7 @@ E a passagem de turno tem dono. Num servidor compartilhado, as páginas são de 
 ## Quando vale a pena, e quando não
 
 <!-- src: 2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory -->
-Se você usa um agente só, num computador só, e fica nele, talvez não precise de nada disso. A compactação do próprio agente mais uma pasta de documentos bem cuidada, como em @sec-ch02 e na peça 6 de @sec-apB, resolvem o essencial.
+Se você usa um agente só, num computador só, e fica nele, talvez não precise de nada disso. A compactação do próprio agente mais uma pasta de documentos bem cuidada, como no @sec-ch02 e na peça 6 de @sec-apB, resolvem o essencial.
 
 <!-- src: ref:ai-memory/README.md -->
 O ai-memory começa a pagar o investimento em quatro situações:

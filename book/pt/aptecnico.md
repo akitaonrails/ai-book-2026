@@ -165,7 +165,7 @@ O que salvou aquele texto foi um segundo modelo, de outra empresa, comparando ca
 ## A rede de testes da newsletter, por dentro {#sec-aptecnico-xp}
 
 <!-- src: original -->
-Em @sec-ch06 eu conto como desenvolvi, ao longo de oito dias de fevereiro de 2026, a newsletter The M.Akita Chronicles, com um agente como par e as práticas do Extreme Programming. O capítulo fica na lição: teste que passa com dado falso mente, e dado real surpreende. Aqui vão os detalhes que só interessam a quem programa: o que a integração contínua conferia, o ritmo dos commits, as brechas que a análise automática pegou e como eu lidei com um modelo de IA dentro do teste de integração.
+No @sec-ch06 eu conto como desenvolvi, ao longo de oito dias de fevereiro de 2026, a newsletter The M.Akita Chronicles, com um agente como par e as práticas do Extreme Programming. O capítulo fica na lição: teste que passa com dado falso mente, e dado real surpreende. Aqui vão os detalhes que só interessam a quem programa: o que a integração contínua conferia, o ritmo dos commits, as brechas que a análise automática pegou e como eu lidei com um modelo de IA dentro do teste de integração.
 
 ### A bateria de cada commit
 
@@ -173,7 +173,7 @@ Em @sec-ch06 eu conto como desenvolvi, ao longo de oito dias de fevereiro de 202
 Todo commit passava pela mesma bateria, nessa ordem: verificação de estilo (RuboCop), busca de vulnerabilidades conhecidas nas bibliotecas usadas (bundler-audit), análise estática de segurança (Brakeman) e a suíte completa de testes. No meu caso levava uns 22 segundos por commit. Parece pouco. Multiplicado por 274 commits, foram mais de cem minutos de conferência que eu não precisei fazer à mão.
 
 <!-- src: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles -->
-Com um agente, o TDD tem um efeito que se alimenta sozinho. O agente é bom em escrever testes, e os testes que ele escreve viram a rede de proteção das mudanças que ele mesmo faz depois. Testes permitem velocidade, e velocidade gera mais testes. O limite desse efeito aparece em @sec-ch12: quando o mesmo modelo escreve o código e o dublê do teste, o teste pode certificar o erro.
+Com um agente, o TDD tem um efeito que se alimenta sozinho. O agente é bom em escrever testes, e os testes que ele escreve viram a rede de proteção das mudanças que ele mesmo faz depois. Testes permitem velocidade, e velocidade gera mais testes. O limite desse efeito aparece no @sec-ch12: quando o mesmo modelo escreve o código e o dublê do teste, o teste pode certificar o erro.
 
 ### Commits pequenos e o ritmo da semana
 
@@ -200,7 +200,7 @@ A checagem de estrutura que o capítulo menciona confere se o arquivo existe, se
 ## A tela preta do Driveclub, passo a passo {#sec-aptecnico-driveclub}
 
 <!-- src: 2026/04/23/driveclub-shadps4-e-ia-como-aprender -->
-Em @sec-ch08 eu conto, em versão curta, os quatro dias de abril de 2026 em que cacei um defeito do Driveclub, um jogo de corrida de PlayStation 4, rodando no shadPS4, um [emulador]{.gls key=emulador} de código aberto ainda sem versão estável [@shadps4]. Nas corridas noturnas, a tela escurecia logo depois da largada até ficar preta, e só voltava perto de um minuto e meio depois. Foram 31 fases de investigação, 44 commits na minha cópia do emulador e mais de 15 mil linhas de código de diagnóstico, e a solução foi trocar um número inteiro num arquivo de configuração. Aqui vai o caminho por dentro.
+No @sec-ch08 eu conto, em versão curta, os quatro dias de abril de 2026 em que cacei um defeito do Driveclub, um jogo de corrida de PlayStation 4, rodando no shadPS4, um [emulador]{.gls key=emulador} de código aberto ainda sem versão estável [@shadps4]. Nas corridas noturnas, a tela escurecia logo depois da largada até ficar preta, e só voltava perto de um minuto e meio depois. Foram 31 fases de investigação, 44 commits na minha cópia do emulador e mais de 15 mil linhas de código de diagnóstico, e a solução foi trocar um número inteiro num arquivo de configuração. Aqui vai o caminho por dentro.
 
 ### A informação que existe e não ajuda
 
@@ -528,7 +528,7 @@ Nenhum desses passos tem garantia. O que o exercício deixou medido foram três 
 ## Voz sintética em produção: o podcast e a dublagem {#sec-aptecnico-voz}
 
 <!-- src: original -->
-Em @sec-ch13 eu conto por que troquei o Qwen3 TTS, um modelo aberto de voz, pela ElevenLabs no podcast semanal da newsletter, e o que aprendi dublando pro inglês 146 episódios do meu canal no YouTube. O capítulo fica na lição: demo de cinco segundos não é produção, e "pronto" é uma palavra perigosa. Aqui vão os detalhes que só interessam a quem vai montar um fluxo de voz sintética.
+No @sec-ch13 eu conto por que troquei o Qwen3 TTS, um modelo aberto de voz, pela ElevenLabs no podcast semanal da newsletter, e o que aprendi dublando pro inglês 146 episódios do meu canal no YouTube. O capítulo fica na lição: demo de cinco segundos não é produção, e "pronto" é uma palavra perigosa. Aqui vão os detalhes que só interessam a quem vai montar um fluxo de voz sintética.
 
 ### Seis semanas afinando o Qwen3
 
@@ -572,7 +572,7 @@ No fim, o painel marcava uns 10 milhões de créditos consumidos de um limite de
 ## O limite teórico dos detectores de bug {#sec-aptecnico-rice}
 
 <!-- src: original -->
-Em @sec-ch16, a propósito das regressões do rsync, eu digo que nenhuma linguagem nova vai trazer um detector universal de bug. Pra quem programa, esse limite tem um teorema por trás.
+No @sec-ch16, a propósito das regressões do rsync, eu digo que nenhuma linguagem nova vai trazer um detector universal de bug. Pra quem programa, esse limite tem um teorema por trás.
 
 <!-- src: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao -->
 O teorema de Rice, provado por Henry Rice em 1953, mostra que não existe um algoritmo geral capaz de decidir, pra todo programa possível, se ele tem uma dada propriedade de comportamento não trivial, como "nunca trava" ou "nunca entrega a senha a ninguém" [@rice1953classes]. Isso vale pra um verificador que sirva pra qualquer código. Pra um programa específico dá pra provar muita coisa, e testes, tipos mais rígidos e análise estática ajudam; só que alguém precisa fazer esse trabalho, programa por programa. Nenhuma ferramenta, de humano ou de IA, faz isso de graça pra todo código.
@@ -580,7 +580,7 @@ O teorema de Rice, provado por Henry Rice em 1953, mostra que não existe um alg
 ## A reescrita do Bun, em números {#sec-aptecnico-bun-2}
 
 <!-- src: original -->
-Em @sec-ch16 eu conto como Jarred Sumner, o criador do Bun, reescreveu o projeto de Zig pra Rust com agentes, num trabalho feito em maio de 2026 e relatado em 8 de julho. O capítulo fica com o método em linhas gerais. Aqui vão as etapas e os números, pra quem quer montar algo parecido. A briga que veio depois, com o criador do Zig, está em @sec-aptecnico-bun.
+No @sec-ch16 eu conto como Jarred Sumner, o criador do Bun, reescreveu o projeto de Zig pra Rust com agentes, num trabalho feito em maio de 2026 e relatado em 8 de julho. O capítulo fica com o método em linhas gerais. Aqui vão as etapas e os números, pra quem quer montar algo parecido. A briga que veio depois, com o criador do Zig, está na @sec-aptecnico-bun.
 
 <!-- src: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito -->
 O ponto de partida eram umas 535 mil linhas de Zig [@sumner2026bun]. O trabalho foi montado em cinco etapas:
@@ -600,7 +600,7 @@ O processo também pegou erro que o compilador deixou passar. Uma das primeiras 
 ## A reescrita do Bun e a resposta do Zig {#sec-aptecnico-bun}
 
 <!-- src: original -->
-Em @sec-ch16 eu conto como Jarred Sumner reescreveu o Bun, o ambiente de JavaScript que a Anthropic comprou e sobre o qual o Claude Code roda, de Zig pra Rust com agentes, num trabalho feito em maio de 2026 e relatado em julho. O capítulo fica com o método. Aqui vai a briga que veio depois, entre o criador do Zig e o time do Bun, e o que eu tirei dela.
+No @sec-ch16 eu conto como Jarred Sumner reescreveu o Bun, o ambiente de JavaScript que a Anthropic comprou e sobre o qual o Claude Code roda, de Zig pra Rust com agentes, num trabalho feito em maio de 2026 e relatado em julho. O capítulo fica com o método. Aqui vai a briga que veio depois, entre o criador do Zig e o time do Bun, e o que eu tirei dela.
 
 <!-- src: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito -->
 No dia seguinte ao relato do Sumner, Andrew Kelley, o criador do Zig, publicou a resposta dele [@kelley2026bun]. Eu queria ler o melhor argumento técnico possível em defesa do Zig. Ele traz alguns, e eles merecem ser ouvidos:
@@ -635,7 +635,7 @@ O que dá pra afirmar é que o método pesou tanto quanto a linguagem. Linguagem
 ## Uma linguagem feita pra IA: do PACT ao Bend 2 {#sec-aptecnico-bend}
 
 <!-- src: original -->
-Em @sec-ch18 eu conto como a pergunta sobre que linguagem aprender atravessou o meu ano, de um palpite em fevereiro a uma medição em outubro. O capítulo fica com a resposta. Aqui vão os dois experimentos com linguagens desenhadas pra IA que vieram no meio do caminho.
+No @sec-ch18 eu conto como a pergunta sobre que linguagem aprender atravessou o meu ano, de um palpite em fevereiro a uma medição em outubro. O capítulo fica com a resposta. Aqui vão os dois experimentos com linguagens desenhadas pra IA que vieram no meio do caminho.
 
 <!-- src: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms -->
 Em 9 de fevereiro de 2026 eu fiz um exercício bem bobo. Perguntei ao Claude e ao GPT Codex como seria uma linguagem de programação feita pra ser editada por LLMs, sem nenhuma preocupação em ser amigável pra humanos. Linguagens são desenhadas em volta dos limites humanos: nomes legíveis, indentação, atalhos que deixam o código bonito. Python e Ruby levam isso longe, e o preço costuma ser eficiência pra máquina.
@@ -670,7 +670,7 @@ Teve crítica pesada de especialistas. Um dia depois do lançamento, um programa
 ## O benchmark de sete linguagens {#sec-aptecnico-linguagens}
 
 <!-- src: original -->
-Em @sec-ch18 eu resumo numa frase o teste que fiz em outubro de 2026 pra saber se alguma linguagem de programação rende mais com agentes: testes ajudaram mais do que a escolha da linguagem. Aqui vão a discussão que motivou o teste, o desenho e os números.
+No @sec-ch18 eu resumo numa frase o teste que fiz em outubro de 2026 pra saber se alguma linguagem de programação rende mais com agentes: testes ajudaram mais do que a escolha da linguagem. Aqui vão a discussão que motivou o teste, o desenho e os números.
 
 <!-- src: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms -->
 No começo de outubro de 2026, o DHH, criador do Ruby on Rails, converteu o aplicativo de chat dele pra várias linguagens usando agentes e foi publicando os resultados de desempenho no X [@dhh2026campfire]. Rust saiu na frente de Elixir e Ruby, e a discussão pegou fogo. Logo apareceu quem notasse que a versão em Rust tinha passado por bem mais rodadas de agente que as outras. Um programador pegou a versão em Elixir e, com otimizações óbvias que nenhuma primeira conversão faz, deixou a página principal dez vezes mais rápida [@kurtome2026elixir].

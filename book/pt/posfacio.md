@@ -18,7 +18,7 @@ Em 12 de outubro de 2026 publiquei no blog a síntese do ano, o texto que virou 
 <!-- src: original -->
 Eu tinha escrito 131 textos no blog em 2026, quase meio milhão de palavras, com assuntos que iam de [benchmark]{.gls} de modelo a carteira de bitcoin. Reorganizar aquilo à mão, sozinho, levaria meses que eu não tinha. Então fiz o que este livro inteiro descreve: entreguei o trabalho braçal a [agentes]{.gls key=agente} e fiquei com a parte de decidir, montar o processo e conferir.
 
-Vale contar como foi, por dois motivos. Você tem o direito de saber como o texto que leu foi produzido. E o próprio processo é o último exemplo da tese do livro. A pergunta mais óbvia, se este livro foi escrito por IA, tem resposta direta em @sec-apfeito.
+Vale contar como foi, por dois motivos. Você tem o direito de saber como o texto que leu foi produzido. E o próprio processo é o último exemplo da tese do livro. A pergunta mais óbvia, se este livro foi escrito por IA, tem resposta direta no @sec-apfeito.
 
 ## Um inventário lacrado
 
@@ -73,7 +73,7 @@ Ela serve pra manutenção. Se amanhã eu corrigir um post, um script refaz o c�
 <!-- src: original -->
 As imagens seguem a mesma lógica. Os diagramas e gráficos foram escritos como código, e cada gráfico traz no próprio código a indicação do capítulo de onde vieram os dados. As ilustrações geradas por IA estão marcadas como tais, e o pedido, o modelo e a data de cada uma ficam registrados.
 
-Pessoas reais aparecem em fotografias, com a origem e o crédito disponível na legenda e em @sec-creditos. A situação de licença ou permissão de cada foto fica registrada individualmente, inclusive quando a autorização de reprodução ainda não foi verificada. Nenhuma imagem de pessoa real foi gerada por IA.
+Pessoas reais aparecem em fotografias, com a origem e o crédito disponível na legenda e nos @sec-creditos. A situação de licença ou permissão de cada foto fica registrada individualmente, inclusive quando a autorização de reprodução ainda não foi verificada. Nenhuma imagem de pessoa real foi gerada por IA.
 
 ## Leitores de mentira
 
@@ -84,7 +84,7 @@ Copidesque confere o texto. Ele deixa passar a pergunta que importa num livro pr
 Cada um foi um agente só de leitura, lendo o livro inteiro em ordem, como aquela pessoa leria, com a instrução de ser leitor e não editor. Cada um devolveu uma nota por capítulo, o que o fez se perder ou se entediar e as falhas de lógica que encontrou. Um editor juntou tudo. Falha de lógica, conferida contra o texto e os posts, era corrigida independentemente de voto; questão de clareza só entrava se mais de um leitor levantasse; gosto de um leitor só ficava de fora.
 
 <!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
-A primeira leitura deu a medida do desequilíbrio. Histórias e ferramentas práticas funcionavam pra todo mundo, e o miolo cheio de medição, os capítulos de @sec-ch11 a @sec-ch13, perdia quem não programa. Os cinco pegaram as mesmas falhas de argumento: uma conclusão maior que a evidência em @sec-ch20, um raciocínio que nunca perde em @sec-ch09, um guia de leitura que mandava quatro dos cinco pro capítulo errado. Cada padrão virou uma regra escrita, que os agentes passaram a ler antes de editar.
+A primeira leitura deu a medida do desequilíbrio. Histórias e ferramentas práticas funcionavam pra todo mundo, e o miolo cheio de medição, os capítulos de @sec-ch11 a @sec-ch13, perdia quem não programa. Os cinco pegaram as mesmas falhas de argumento: uma conclusão maior que a evidência no @sec-ch20, um raciocínio que nunca perde no @sec-ch09, um guia de leitura que mandava quatro dos cinco pro capítulo errado. Cada padrão virou uma regra escrita, que os agentes passaram a ler antes de editar.
 
 <!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
 Daí veio o rebalanceamento. Umas 8 mil palavras de caderno de laboratório saíram dos capítulos pra @sec-aptecnico, cada parágrafo com a sua marca de origem; a lista de leituras virou apêndice; uma seção inteira foi guardada fora do livro enquanto a verificação estava pendente; cada capítulo passou a orientar o leitor antes do primeiro jargão; e o epílogo ganhou uma lista do que fazer nesta semana, por tipo de leitor. Foram três rodadas, ler, editar e ler de novo, porque a edição conserta o problema velho e cria o novo: as falhas de lógica caíram de 73 pra 53 e 51, e a revisão parou quando os problemas deixaram de voltar.
@@ -102,7 +102,7 @@ De um lado, as ferramentas pra trabalhar com agentes: o ai-memory (@sec-apmemori
 ## O que continua sendo meu
 
 <!-- src: 2026/04/15/como-falar-com-o-claude-code-efetivamente -->
-Em @sec-ch09 eu contei que o texto do blog sobre como falar com o Claude Code foi escrito pelo próprio Claude, a partir de um pedido meu, e corrigido por mim enquanto ele escrevia. Este livro foi feito do mesmo jeito, em escala maior. Este posfácio também: o rascunho saiu do Claude, rodando no Claude Code, a partir de um pedido meu.
+No @sec-ch09 eu contei que o texto do blog sobre como falar com o Claude Code foi escrito pelo próprio Claude, a partir de um pedido meu, e corrigido por mim enquanto ele escrevia. Este livro foi feito do mesmo jeito, em escala maior. Este posfácio também: o rascunho saiu do Claude, rodando no Claude Code, a partir de um pedido meu.
 
 <!-- src: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo -->
 Não foi a primeira vez no ano. Em abril, o Claude Code traduziu vinte anos de blog em pouco mais de um dia e meio (@sec-interlude1). Noventa por cento correu liso, e os outros dez só se resolveram porque alguém leu a lista do que tinha falhado e foi atrás de outro caminho.

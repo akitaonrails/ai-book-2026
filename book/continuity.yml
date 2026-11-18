@@ -58,6 +58,7 @@ naming:
   - "OpenAI tiers (the blog is inconsistent; the book fixes one form): hyphen + capitalised tier, GPT-5.4 Sol, GPT-5.6 Sol/Luna/Terra, GPT-6 Sol/Luna/Astra; a tier alone is capitalised too (o Sol, o Terra)."
   - "Z.ai (never z.ai). 'Sprint' is feminine (a sprint)."
   - "A cross-reference used as subject or after como/que/porque takes the article: o @sec-ch15."
+  - "PT-BR cross-references following em take the definite article: no @sec-ch15, no @sec-apB, na @sec-aptecnico-rag, nos @sec-creditos. Repeat the contraction in coordinated references: no @sec-ch04 e no @sec-ch15."
   - "Book and paper titles in italics."
 
 # The mechanical subset of `naming`, enforced by scripts/lint_chapter.rb (errors).

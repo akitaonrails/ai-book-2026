@@ -57,10 +57,10 @@ Se você está começando na programação:
 ## Medo vende
 
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
-Você conheceu em @sec-ch01 a frase do cartão: a sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA. Depois deste ano, eu acrescentaria que parte do medo segue a mesma regra. Quando a pessoa não sabe como a coisa funciona, sobra espaço pra imaginar o fim do mundo.
+Você conheceu no @sec-ch01 a frase do cartão: a sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA. Depois deste ano, eu acrescentaria que parte do medo segue a mesma regra. Quando a pessoa não sabe como a coisa funciona, sobra espaço pra imaginar o fim do mundo.
 
 <!-- src: original -->
-Boa parte, não todo. Em @sec-ch14 você viu pesquisadores sérios, que sabem muito bem como a coisa funciona, preocupados de verdade, e esse medo merece ser ouvido e discutido com argumento. O que não merece crédito é o medo fabricado por quem lucra com ele.
+Boa parte, não todo. No @sec-ch14 você viu pesquisadores sérios, que sabem muito bem como a coisa funciona, preocupados de verdade, e esse medo merece ser ouvido e discutido com argumento. O que não merece crédito é o medo fabricado por quem lucra com ele.
 
 <!-- src: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit -->
 Esse medo fabricado e a empolgação saem da mesma fábrica. Em agosto de 2026 escrevi sobre os cursos de "engenharia" disso e daquilo que brotaram em volta dos agentes, e o mecanismo era velho. Primeiro deixam você ansioso, achando que está ficando pra trás, que todo mundo já migrou pro paradigma novo e só você não. Depois cobram pra curar a ansiedade que eles mesmos criaram.
@@ -95,10 +95,10 @@ Vale o mesmo pro fundamento do seu próprio ofício. Pense no programador sem ba
 <!-- src: original -->
 A segunda é julgamento, a capacidade de olhar uma resposta e saber se ela presta. O melhor teste que eu conheço é o de @sec-ch18: você sabe explicar por que a resposta certa é a certa? Se sabe, a máquina digita pra você. Se não sabe, ela digita do mesmo jeito, e você não percebe quando ela erra.
 
-Julgamento se treina fazendo, errando e conferindo. O agente deixa a parte do fazer muito mais barata, e dá pra testar e descartar uma hipótese atrás da outra, como em @sec-ch08. A parte do conferir continua inteira com você.
+Julgamento se treina fazendo, errando e conferindo. O agente deixa a parte do fazer muito mais barata, e dá pra testar e descartar uma hipótese atrás da outra, como no @sec-ch08. A parte do conferir continua inteira com você.
 
 <!-- src: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r -->
-Uma conta que eu repetia no tempo do canal: curso dá uns 1% de introdução, e os outros 99% você caça sozinho, à medida que precisa. A resposta pronta da máquina entra na mesma conta: é introdução, e a caça continua sua. Como estudar com um agente do lado está em @sec-apestudar.
+Uma conta que eu repetia no tempo do canal: curso dá uns 1% de introdução, e os outros 99% você caça sozinho, à medida que precisa. A resposta pronta da máquina entra na mesma conta: é introdução, e a caça continua sua. Como estudar com um agente do lado está no @sec-apestudar.
 
 ### O seu domínio
 
@@ -118,19 +118,19 @@ Essa lista é mais longa, e libera mais tempo:
 - curso e certificação do nome da moda do mês (harness engineering, loop engineering e parentes). Quando a tecnologia vira commodity, o dinheiro migra pro nome novo: cinco nomes pra encadear chamada de API e um certificado que expira em seis meses. Quem trabalha com método, teste e revisão já faz o que eles ensinam;
 - anúncio de [AGI]{.gls key=agi}, de extinção, de modelo perigoso demais pra lançar. O roteiro existe pelo menos desde 2019 (@sec-ch01), e o @sec-ch14 mostra quem lucra com ele;
 - briga de ranking por décimo de ponto. No topo, os modelos formam um grupo, e a diferença entre eles cabe no [ruído entre execuções]{.gls key=ruido-entre-execucoes} (@sec-ch11);
-- a promessa de que o próximo modelo resolve. Os relatos de quem treina e as medições de fora, em @sec-ch20, mostram a inteligência de base achatando; o que ainda sobe é o que o agente faz com ferramentas, e o que muda o resultado é o processo em volta;
-- o vídeo do aplicativo feito em dez minutos. As primeiras horas são a parte fácil, e os outros noventa por cento estão em @sec-ch05.
+- a promessa de que o próximo modelo resolve. Os relatos de quem treina e as medições de fora, no @sec-ch20, mostram a inteligência de base achatando; o que ainda sobe é o que o agente faz com ferramentas, e o que muda o resultado é o processo em volta;
+- o vídeo do aplicativo feito em dez minutos. As primeiras horas são a parte fácil, e os outros noventa por cento estão no @sec-ch05.
 
 ## Confira você mesmo
 
 <!-- src: 2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior -->
-Em julho, depois de meses publicando tabelas, escrevi a frase que eu mais queria que você levasse daqui: não confie em benchmark, não confie em influencer, não confie em mim. Ela vale pra este livro. Foi por isso que deixei em @sec-ch20 a lista do que me faria mudar de ideia, com coisas que qualquer um pode medir de fora.
+Em julho, depois de meses publicando tabelas, escrevi a frase que eu mais queria que você levasse daqui: não confie em benchmark, não confie em influencer, não confie em mim. Ela vale pra este livro. Foi por isso que deixei no @sec-ch20 a lista do que me faria mudar de ideia, com coisas que qualquer um pode medir de fora.
 
 <!-- src: original -->
 Conferir dá menos trabalho do que parece, e as listas práticas já estão no livro, cada uma onde o assunto pedia:
 
 - pra usar chatbot em assunto sério, as oito regras de @sec-ch04, com os cuidados extras pra saúde, dinheiro e notícias;
-- pra ler uma tabela de [benchmark]{.gls}, @sec-ch11, e pra ler um anúncio, as perguntas de @sec-como-ler-anuncio, com as duas listas resumidas em @sec-apC;
+- pra ler uma tabela de [benchmark]{.gls}, @sec-ch11, e pra ler um anúncio, as perguntas de @sec-como-ler-anuncio, com as duas listas resumidas no @sec-apC;
 - pra deixar um programa mexer nos seus arquivos sem perder nada, os hábitos de @sec-ch15 e o kit de @sec-apB;
 - pra decidir se confia num software feito com IA, as perguntas de @sec-ch16;
 - contra golpe e [deepfake]{.gls}, os hábitos de @sec-ch17.
@@ -152,7 +152,7 @@ A linha que eu não cruzo é a da decisão. A máquina pode propor, pesquisar, c
 - guarde o que aprendeu num lugar seu, porque o modelo não guarda nada (@sec-ch20).
 
 <!-- src: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida -->
-Essa linha é mais velha que a IA. Ela vem do "Não terceirize suas decisões", o episódio do Akitando de 2019 que você viu em @sec-ch09 [@akitando063], e da regra que sigo até hoje: se eu decido certo, o mérito é 100% meu, e se decido errado, o prejuízo também. No mesmo vídeo eu mandava desconfiar do conselho de quem não corta da própria pele se der errado. O modelo é exatamente esse conselheiro, e quem paga pelo erro dele é você.
+Essa linha é mais velha que a IA. Ela vem do "Não terceirize suas decisões", o episódio do Akitando de 2019 que você viu no @sec-ch09 [@akitando063], e da regra que sigo até hoje: se eu decido certo, o mérito é 100% meu, e se decido errado, o prejuízo também. No mesmo vídeo eu mandava desconfiar do conselho de quem não corta da própria pele se der errado. O modelo é exatamente esse conselheiro, e quem paga pelo erro dele é você.
 
 > A ferramenta faz quase tudo o que você pedir. Saber o que pedir, e se o que voltou presta, continua sendo trabalho seu.
 
