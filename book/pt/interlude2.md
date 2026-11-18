@@ -90,7 +90,7 @@ Tudo roda no computador, sem conta, sem servidor, sem internet. É deliberadamen
 ## O ponto cego
 
 <!-- src: original -->
-A história tem um pé de página. Entre 2022 e 2023, um grupo de pesquisadores treinou um programa com uma única missão: achar um jeito de ganhar do KataGo. O programa que eles criaram joga Go mal, perde pra amadores, mas descobriu uma armadilha: cercar devagar um grupo de pedras do KataGo com um laço enorme enquanto distrai a máquina com lances em outro canto do tabuleiro. O KataGo, sobre-humano, não percebia o cerco até ser tarde demais [@wang2023adversarial].
+A história tem uma nota de rodapé. Entre 2022 e 2023, um grupo de pesquisadores treinou um programa com uma única missão: achar um jeito de ganhar do KataGo. O programa que eles criaram joga Go mal, perde pra amadores, mas descobriu uma armadilha: cercar devagar um grupo de pedras do KataGo com um laço enorme enquanto distrai a máquina com lances em outro canto do tabuleiro. O KataGo, sobre-humano, não percebia o cerco até ser tarde demais [@wang2023adversarial].
 
 A armadilha era simples o bastante pra um ser humano aprender. Um dos autores do estudo, Kellin Pelrine, um amador forte, passou a vencer o KataGo com regularidade, sem ajuda de computador durante as partidas. E o defeito continuou lá mesmo em versões do KataGo treinadas especificamente pra se defender dele.
 
