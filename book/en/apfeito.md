@@ -5,7 +5,7 @@ sources:
   - {post: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente, sha256: "a5d74995c975312731dcd96702e6f813f9e1148dbe315a92436c3c045346d70f", commit: "557350127df181c4b124a2c8759648a79e17e4d5"}
 refs_projects: []
 blog_commit: "956fc9ed1cc8e32f61deeef64518eece134fd510"
-translated_from: {file: book/pt/apfeito.md, sha256: "24daffce476923c3ff4bc83be64b9a8841cd87ee7d28ec44c6ad7df54d2e7ca2"}
+translated_from: {file: book/pt/apfeito.md, sha256: "7a17487b6eb3aed7455f7e8a36f12983dbb73519661666f0543db75e9736fc6b"}
 ---
 
 # Was This Book Written by AI? {#sec-apfeito}

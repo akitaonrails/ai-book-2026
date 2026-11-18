@@ -8,7 +8,7 @@ sources:
   - {post: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo, sha256: "c6451afc1d26d440a2364ebee3249330f54d9e0ddcb493aa7fdba4c9ff72d8c4"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/posfacio.md, sha256: "82624aa6715c50885d2f0dac071da440765c0b83961875ab720d029ee5d63e0c"}
+translated_from: {file: book/pt/posfacio.md, sha256: "bbdafcb9dc64899d74fbd1fae3798a87b939cb80cd29b83332319af9745fc781"}
 ---
 
 # Afterword: How This Book Was Made {#sec-posfacio .unnumbered}

@@ -13,7 +13,7 @@ sources:
   - {post: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida, sha256: "2727fad41f2e46b8df4cbc36d4a7283894b02413b94f973356d5b2cb72845683"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/epilogo.md, sha256: "bfb5c0e4aee55b50f5ed3cd4a8c5f83e9f7e52f768bb59afa2e666160ec87324"}
+translated_from: {file: book/pt/epilogo.md, sha256: "4623ad26d73fb7caa5bc22e4d70ae7d1299d799e1fcb38cc39a6b5f4a7b0643b"}
 ---
 
 # Epilogue: What I'd Tell You {#sec-epilogo .unnumbered}

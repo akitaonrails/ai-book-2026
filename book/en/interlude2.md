@@ -6,7 +6,7 @@ sources:
   - {post: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas, sha256: "7721d4c6a1750ef667ba1007d1660cafe88fce35576e08524d37f24d0a2bdbf4"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/interlude2.md, sha256: "cb3efe5a2d46e92bbf1110dc846967b8846c26735f19f2502543edc1f4f8b64f"}
+translated_from: {file: book/pt/interlude2.md, sha256: "05906c02ef6c05c18b6f74abfb60d1d4fa7ed5f5e33ed27b8c8c5b01876cc207"}
 ---
 
 # Interlude: From GNU Go to KataGo {#sec-interlude2 .unnumbered}

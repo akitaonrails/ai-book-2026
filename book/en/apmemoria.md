@@ -15,7 +15,7 @@ refs_projects:
   - "ai-memory/docs/local-embeddings.md"
   - "ai-memory/docs/cross-project-profile.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apmemoria.md, sha256: "291f99b1206e0e365438381b1af49c936ac2268ded202e9e6af67602f99e437b"}
+translated_from: {file: book/pt/apmemoria.md, sha256: "ec53e355db0ddf37501f1b0b408d4cf9cfa4e60a1ad570bf8502c96d7c3f16dc"}
 ---
 
 # ai-memory: The Memory That's Yours {#sec-apmemoria}

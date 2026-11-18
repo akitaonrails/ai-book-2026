@@ -18,7 +18,7 @@ refs_projects:
   - "ai-memory/README.md"
   - "ai-usagebar/README.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apB.md, sha256: "8e36411caf00f1c6f4d4561067a600ca6752f87047695268e4b4d22f784e4399"}
+translated_from: {file: book/pt/apB.md, sha256: "d44205997ddafe99c7c3efd5dc5b1d6fefef918e630a3dd73830f7c99f784ba9"}
 ---
 
 # A Minimum Kit for Using Agents Safely {#sec-apB}

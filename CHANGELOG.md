@@ -14,7 +14,13 @@ files.
   out; figure captions and table rows are read. `SAMPLE=1` reads only the
   opening of the first chapters. The `book` workflow can attach an M4B per
   edition to each release; it stays off until the `AUDIOBOOK` repository
-  variable is set to `true`.
+  variable is set to `true` (#9, requested in #3).
+- Fixed the missing article before cross-references in the PT edition:
+  "em Capítulo 5" now reads "no Capítulo 5" (#14, reported in #15), and the
+  same fix after other prepositions ("do Capítulo 4", "pro Capítulo 10",
+  "da Seção 15.7"). `rake check` now flags the bare form.
+- "A história tem um pé de página" now reads "uma nota de rodapé" in the PT
+  KataGo interlude (#13).
 
 ## 1.0.0 — 2026-10-17
 

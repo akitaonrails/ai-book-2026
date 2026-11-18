@@ -4,7 +4,7 @@ chapter: "Before You Start: What This Book Doesn't Explain"
 sources: []
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/antes.md, sha256: "682fcef0185100f5bc3d2a0bae26b5c1b8c6db2e6bd9137e3488db42fbdb0fc7"}
+translated_from: {file: book/pt/antes.md, sha256: "e3caa7a3e37198e0bc1345afec4ca23867d2329effed07e0789ebb1097a7d2b2"}
 ---
 
 # Before You Start: What This Book Doesn't Explain {#sec-antes .unnumbered}

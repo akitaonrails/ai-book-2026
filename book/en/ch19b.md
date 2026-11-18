@@ -7,7 +7,7 @@ sources:
   - {post: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados, sha256: "5a6b08a8fdebc6eac5511e470883960e1f763187351f8df54e684349eee446c1"}
 refs_projects: []
 blog_commit: "79bca4b5ce7a7bc72f950b923318e9ca2c04b01d"
-translated_from: {file: book/pt/ch19b.md, sha256: "42713d194e0fc7eeb33fe72d7071d96d05f4ed9fefc3426cbcb101fe089afc12"}
+translated_from: {file: book/pt/ch19b.md, sha256: "9c6bc63860b7cbc5d6dc682f4c16bfdfe63a14501d915918c95eef2b2e2d10fb"}
 ---
 
 # The World Won't Wait {#sec-ch19b}

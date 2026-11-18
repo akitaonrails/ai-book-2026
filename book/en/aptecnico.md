@@ -37,7 +37,7 @@ refs_projects:
   - "llm-coding-benchmark/docs/success_report.v3.md"
   - "llm-coding-benchmark/docs/success_report.v4.combined.md"
 blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
-translated_from: {file: book/pt/aptecnico.md, sha256: "b73fc1333cded594342aaaa4bbea4645d9ef281bf691758ae8f3a26645bf904a"}
+translated_from: {file: book/pt/aptecnico.md, sha256: "8ea4eb0fe386336ae1844a4e78bc37ab83b5f04e6bb78e9009bb9bf1bf81427b"}
 ---
 
 # For Programmers: Behind the Scenes {#sec-aptecnico}

@@ -4,7 +4,7 @@ chapter: "How to Read This Book"
 sources: []
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/como-ler.md, sha256: "c4a730b1db0951ad2482a05afb751883447336ca998d2c6d4931ff0d2bb34b32"}
+translated_from: {file: book/pt/como-ler.md, sha256: "00ca98bf728c2d550846969f7dcbc1292b5687ec4c9a3bd4538c6f084f0610ce"}
 ---
 
 # How to Read This Book {#sec-como-ler .unnumbered}
