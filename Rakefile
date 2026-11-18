@@ -12,6 +12,7 @@
 #   rake review DIR=reviews/<version>/<lang>  validate + summarise copyedit findings (scripts/review.rb)
 #   rake balance        words per unit and per source post, overlap between units (build/<lang>/balance.md)
 #   rake test           regression tests of the tools (test/, isolated fixture book)
+#   rake audiobook      read the built EPUB aloud into build/<lang>/<title>.m4b (VOICE=..., SAMPLE=1, network, hours)
 
 require "digest"
 require "fileutils"
@@ -356,6 +357,63 @@ task :kdp_cover do
   out = File.join(ROOT, "build", "kdp", title + "-#{binding}-cover.pdf")
   FileUtils.mkdir_p(File.dirname(out))
   ruby "scripts/compose_kdp_cover.rb", template, out, "--lang", LANG
+end
+
+# The audiobook is read by Microsoft Edge's online voices through
+# epub2tts-edge, pinned by commit and run with uv like the charts (it needs
+# Python 3.11: pydub still imports audioop). Not part of build: it needs the
+# network and takes hours. In CI only the book workflow's audiobook job runs
+# it, on release tags once the AUDIOBOOK repository variable is "true". The
+# work dir is keyed by the narration text and the voice, so an edited edition
+# never reuses stale audio, and an interrupted run resumes from the last
+# finished chapter (epub2tts-edge keeps each one as partN.flac).
+EPUB2TTS = "git+https://github.com/aedocw/epub2tts-edge@6fb7a0f125188c0ff961a8db260f10221eb32c3c"
+VOICES = { "pt" => "pt-BR-AntonioNeural", "en" => "en-US-AndrewNeural" }.freeze
+
+desc "Read the built EPUB aloud into an M4B with chapters and cover (VOICE=<edge-tts voice>, SAMPLE=1 for a few minutes)"
+task :audiobook do
+  epub = Dir[File.join(ROOT, "build", LANG, "*.epub")].first
+  raise "run `rake build BOOK_LANG=#{LANG}` first (missing the EPUB)" unless epub
+
+  voice = ENV.fetch("VOICE") { VOICES.fetch(LANG) }
+  # It names the work dir and the output file, and goes to epub2tts-edge as an argument.
+  raise "VOICE must be an edge-tts voice name, like #{VOICES.fetch(LANG)}" unless voice.match?(/\A[A-Za-z]{2,3}(-[A-Za-z0-9]+)+\z/)
+
+  # SAMPLE=1: the opening of the first chapters, to judge the voice and the
+  # chapter marks in minutes instead of hours.
+  sample = %w[1 true].include?(ENV["SAMPLE"])
+  title = File.basename(epub, ".epub") + (sample ? "-sample" : "")
+  staging = File.join(ROOT, "build", "audiobook", LANG)
+  text = File.join(staging, "#{title}.txt")
+  ruby "scripts/audiobook_text.rb", *("--sample" if sample), epub, text
+  work = File.join(staging, "#{Digest::SHA256.file(text).hexdigest[0, 12]}-#{voice}")
+  FileUtils.mkdir_p(work)
+  FileUtils.cp(text, work)
+  # What an interrupted run leaves behind besides finished chapters. Paragraphs
+  # of a half-read chapter would be resumed with the chapter title spoken in the
+  # middle (epub2tts-edge prepends it to the first paragraph it synthesises),
+  # and the last one may be truncated; leftovers of the final mux make ffmpeg
+  # stop to ask, after which epub2tts-edge deletes the chapters anyway.
+  stem = "#{title} (#{voice})"
+  FileUtils.rm_f(Dir[File.join(work, "{pgraphs*.flac,sntnc*.mp3}")] +
+                 %W[#{stem}.m4a #{stem}.m4b filelist.txt FFMETADATAFILE].map { File.join(work, _1) })
+  # epub2tts-edge tags the cover as JPEG whatever it is; the EPUB's is a PNG.
+  cover = Dir[File.join(staging, "cover.*")].first
+  sh "ffmpeg", "-y", "-loglevel", "error", "-f", "image2", "-i", cover, File.join(work, "cover.jpg") if cover
+  # Pauses shorter than epub2tts-edge's 1200 ms, which drag over a 15-hour book.
+  cmd = ["uvx", "--quiet", "--python", "3.11", "--from", EPUB2TTS, "epub2tts-edge", File.basename(text),
+         "--speaker=#{voice}", "--sentencepause", "500", "--paragraphpause", "900"]
+  cmd += ["--cover", "cover.jpg"] if cover
+  # NLTK downloads its sentence tokenizer into the first existing NLTK_DATA dir,
+  # private, or into ~/nltk_data otherwise.
+  nltk = File.join(ROOT, "build", "audiobook", "nltk_data")
+  FileUtils.mkdir_p(nltk, mode: 0o700)
+  sh({ "NLTK_DATA" => nltk }, *cmd, chdir: work)
+  # epub2tts-edge ignores ffmpeg's exit status, so success is the file existing.
+  m4b = File.join(work, "#{stem}.m4b")
+  raise "epub2tts-edge finished without writing #{m4b}; see its ffmpeg output above" unless File.exist?(m4b)
+
+  FileUtils.mv(m4b, File.join(ROOT, "build", LANG, "#{title}.m4b"))
 end
 
 task default: %i[check build]
