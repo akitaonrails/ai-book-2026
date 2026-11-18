@@ -6,6 +6,12 @@ files.
 
 ## Unreleased
 
+## 1.1.0 — 2026-11-18
+
+Copyedit fixes to the PT-BR edition and an opt-in audiobook pipeline. The
+English text is unchanged and the page counts stay the same (PT print 531, ebook
+503).
+
 - Fixed a missing word in the PT preface ("pronto em uma hora e meia"); the
   English edition already read correctly. Reported in #8, fixed in #7.
 - Add `rake audiobook`: reads the built EPUB aloud with Microsoft Edge's
